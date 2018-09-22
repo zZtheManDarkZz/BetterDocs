@@ -1,0 +1,97 @@
+---
+title: Discord themes & plugins!
+hero: The Discord Enahncement Project.
+subtitle: Custom CSS themes + JS plugins, BTTV & FFZ twitch emotes and lots of extra tools.
+layout: main
+download: https://github.com/rauenzi/BetterDiscordApp/releases
+---
+<div class="content">
+	<section><div class="card-container flex-row">
+		<div class="card">
+			<div class="card-header">
+				<a href="/themes.html">
+					<i class="material-icons">format_paint</i>
+				</a>
+			</div>
+			<div class="card-content">
+				<b>Themes</b>
+				<p>Write your own theme with the built-in CSS loader or download themes made by other people for
+					<b>free</b>.</p>
+			</div>
+	
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<i class="material-icons">tag_faces</i>
+			</div>
+			<div class="card-content">
+				<b>Emotes</b>
+				<p>With over 50,000 emotes you can use global and subscriber based emotes from twitch and other 3rd party providers.</p>
+			</div>
+	
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a href="/plugins.html">
+					<i class="material-icons">power</i>
+				</a>
+			</div>
+			<div class="card-content">
+				<b>Plugins</b>
+				<p>Write your own plugin with the built-in JS loader or download plugins made by other people for
+					<b>free</b>.</p>
+			</div>
+	
+		</div>
+	</div>
+	</section>
+</div>
+<div class="content no-padding" id="products">
+	<section>
+		<div class="container">
+			<h2>Themes</h2>
+			<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
+			<ul class="product-list">
+				{% for product in site.products %}
+					<li>
+						<div class="styles">
+						{% include product-styles.html product=product %}
+						<div class="product-details">
+							<h4><a href="{{ product.url }}">{{ product.name }}</a></h4>
+							<div class="product-description">
+								{{ product.description_markdown | truncate: 45 | markdownify }}
+							</div>
+							{% if product.price == nil %}
+							{% else %}
+							<p>${{ product.price }}</p>
+							{% endif %}
+						</div>
+						</div>
+					</li>
+				{% endfor %}
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<h2>Plugins</h2>
+			<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
+			<ul class="product-list">
+				{% for post in site.pluginss %}
+					<li>
+						{% include product-styles.html %}
+						<div class="product-details">
+							<h4><a href="{{ product.url }}">{{ product.name }}</a></h4>
+							<div class="product-description">
+								{{ product.description_markdown | truncate: 45 | markdownify }}
+							</div>
+							<p>${{ product.price }}</p>
+						</div>
+					</li>
+				{% endfor %}
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+</div>
