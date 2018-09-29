@@ -1,6 +1,16 @@
+- name: Home
+  link: https://betterdocs.us
+- name: Themes
+  link: https://betterdocs.us/themes/
+- name: Plugins
+  link: https://betterdocs.us/plugins/
 - name: Tutorials
   link: /
 - name: Videos
   link: /videos/
 - name: FAQ
   link: /faq/
+- name: Server
+  link: https://discord.gg/D4cAkXX
+- name: Contact
+  link: https://betterdocs.us/contact/
