@@ -14,7 +14,7 @@
   link: https://discord.gg/D4cAkXX
   new_window: true
   highlight: true
-- name: Contact
-  link: /contact/
+- name: Docs
+  link: https://support.betterdocs.us
   new_window: false
   highlight: false
