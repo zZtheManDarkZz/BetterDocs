@@ -7,7 +7,7 @@ description_markdown: >-
 download: https://github.com/
 demo: https://rawgit.com/
 
-[//]: # (Demo must be a RAW github (or rawgit) link to the theme)
+[//]: # (Demo must be a RAW github (or rawgit) link to the theme) 
 
 support: 
 
