@@ -1,0 +1,27 @@
+---
+title: Contact
+description: Get in touch
+email: support@betterdocs.net
+hero: Get in touch
+---
+
+<div class="contact-box">
+	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form" netlify>
+		<h3>Send us a message</h3>
+		<label for="name">Full Name</label>
+		<input type="text" name="name" id="name" placeholder="Enter your name..." autofocus>
+
+		<label for="email">Email Address</label>
+		<input type="email" name="email" id="email" placeholder="Enter your email..." required inputmode="email">
+
+		<label for="message">Message</label>
+		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
+
+		<label for="file">File</label>
+		<input type="file" name="file" id="file">
+
+		<input type="hidden" name="_to" value="{{ page.email }}">
+		<input type="text" name="_gotcha" style="display: none;">
+
+		<input type="submit" value="Send Message">
+	</form>

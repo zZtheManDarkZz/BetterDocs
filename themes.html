@@ -1,0 +1,104 @@
+---
+title: Discord themes & plugins!
+description: A list of free and paid high quality themes made by our community. For the past 3 years we have been the #1 go to website for all Discord themes!
+hero: Discord Themes
+subtitle: Custom CSS themes made by our commuity!
+layout: default
+search: true
+---
+
+<div class="content" id="themes">
+	<section style="padding: 40px 0;">
+		<div class="container">
+			<h2>Themes ({{ site.themes | size }})</h2>
+			<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
+			<ul class="product-list" id="product-list">
+				{% for theme in site.themes %}
+					<li>
+						<div class="styles">
+						{% include product-styles.html product=theme %}
+						<div class="product-details">
+							<h4><a href="{{ theme.url }}">{{ theme.title }}</a></h4>
+							<h5>by <b>{{ theme.author }}</b></h5>
+							<div class="product-description">
+								{{ theme.description_markdown | truncate: 100 | markdownify }}
+							</div>
+							{% if theme.price == nil %}
+							{% else %}
+							<p>${{ theme.price }}</p>
+							{% endif %}
+							<div class="button-wrapper flex-row">
+								<div class="button flex-button">
+									<a href="{{ theme.download }}" target="blank">Download</a>
+									<a href="{{ site.url }}/demo/{{ theme.style }}/?theme={{ theme.demo }}" target="blank">Demo</a>
+										
+								</div>
+							</div>
+						</div>
+						</div>
+					</li>
+				{% endfor %}
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+</div>
+<a href="https://github.com/MrRobotjs/BetterDocs/edit/master/_themes/_defaults.md">
+<div class="upload-button-container">
+	<div class="upload-btn">
+		<span>+</span> Upload Theme
+	</div>
+</div>
+</a>
+<script>
+		$(function() {
+			$("#search-input").keyup(function() {
+				console.log("searching for: " + $(this).val());
+				var search = $(this).val().toLowerCase();
+				$("#product-list").find("li").each(function() {
+					if ($(this).text().toLowerCase().includes(search)) {
+						$(this).show();
+					} else {
+						$(this).hide();
+					}
+				});
+			});
+		});
+		/*
+		$(function() {
+			$.fn.sortList = function() {
+				var mylist = $(this);
+				var listitems = $('li', mylist).get();
+				listitems.sort(function(a, b) {
+					var compA = $(a).text().toUpperCase();
+					var compB = $(b).text().toUpperCase();
+					return (compA < compB) ? -1 : 1;
+				});
+				$.each(listitems, function(i, itm) {
+					mylist.append(itm);
+				});
+			}
+			$("ul#product-list").sortList();
+		});
+		
+		// selector to parent element (best approach by id)
+		var parent = document.querySelector("ul#product-list"),
+			// take items (parent.children) into array
+			itemsArray = Array.prototype.slice.call(parent.children);
+		// sort items in array by custom criteria
+		itemsArray.sort(function(a, b) {
+			// inner text suits best (even when formated somehow)
+			if (a.innerText < b.innerText) return -1;
+			if (a.innerText > b.innerText) return 1;
+			return 0;
+		});
+		// reorder items in the DOM
+		itemsArray.forEach(function(item) {
+			// one by one move to the end in correct order
+			parent.appendChild(item);
+		});*/
+		var count = $('ul#product-list').children().length;
+		$('#result').text(count);
+	</script>

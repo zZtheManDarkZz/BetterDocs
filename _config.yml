@@ -1,0 +1,114 @@
+# ----
+# Site values
+
+title: BetterDocs
+url: "https://betterdocs.us"
+baseurl:
+#google_analytics_key: UA-65593962-3
+#snipcart_key: ""
+
+# Values for the jekyll-google-tag-manager gem (https://github.com/t-richards/jekyll-google-tag-manager)
+google:
+  tag_manager:
+    container_id: GTM-NG6W33N
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: A Discord enhancement project. Free quality Themes and Plugins for Discord and easy installation instructions for BetterDiscord and more!
+author:
+  name: Chris
+  email: betterdocs@support.com
+  twitter: BetterDocs # twitter username without the @ symbol
+  phone: ""
+social:
+  name: Chris
+  links:
+    - https://github.com/MrRobotjs
+
+# -----
+# Build
+# timezone: UTC
+
+collections:
+  staff_members:
+    _hide_content: true
+  products:
+    _hide_content: true
+    output: true
+  themes:
+    _hide_content: true
+    output: true
+  pluginss:
+    _hide_content: true
+    output: true
+
+# Link style. https://site.com/page.html --> https://site.com/page/
+permalink: pretty
+
+# Values for the jekyll-sitemap gem (https://github.com/jekyll/jekyll-sitemap)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "index.html"
+    values:
+      layout: "default"
+
+jekyll-archives:
+  enabled:
+    - categories
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-google-tag-manager
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+include: 
+  - _redirects
+  - redirects
+
+# -----------
+# CloudCannon
+
+garment_types:
+  - hat
+  - top
+
+social_icons:
+  - Email
+  - Facebook
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - RSS
+
+_comments:
+  map: Update the map location and display settings.
+  latitude: Coordinates for the center marker on the map.
+  longitude: Coordinates for the center marker on the map.
+  zoom: The zoom level for the map.
+  pricing_table: Update the information in the pricing tables.
+  highlight: Emphasis the text
+  color: The background color used in the plan name and call to action.
+  new_window: Open link in new window
+  description: This is used for facebook shares of the page and google indexing
