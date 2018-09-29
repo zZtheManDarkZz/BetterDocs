@@ -1,7 +1,7 @@
 # ----
 # Site values
 
-title: BetterDocs
+title: Discord Themes & Plugins | BetterDocs
 url: "https://betterdocs.us"
 baseurl:
 #google_analytics_key: UA-65593962-3
@@ -16,7 +16,7 @@ author:
   twitter: BetterDocs # twitter username without the @ symbol
   phone: ""
 social:
-  name: Chris
+  name: BetterDocs
   links:
     - https://github.com/MrRobotjs
 
