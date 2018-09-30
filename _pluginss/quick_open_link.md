@@ -7,8 +7,5 @@ github: https://github.com/XFoxPrower/
 download: https://github.com/XFoxPrower/Quick-Open-Link
 support: https://github.com/XFoxPrower/Quick-Open-Link/issues
 tags:
-images:
-  - name: 
-    image: 
 layout: product
 ---

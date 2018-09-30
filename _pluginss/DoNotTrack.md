@@ -7,8 +7,5 @@ github: https://github.com/rauenzi
 download: https://github.com/rauenzi/BetterDiscordAddons/tree/master/Plugins/DoNotTrack
 support: https://discordapp.com/invite/cdzD9wF
 tags:
-images:
-  - name:
-    image:
 layout: product
 ---

@@ -7,8 +7,5 @@ github: https://github.com/Metalloriff/
 download: https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/DoubleClickVoiceChannels.plugin.js
 support: https://discord.gg/yNqzuJa
 tags:
-images:
-  - name:
-    image:
 layout: product
 ---

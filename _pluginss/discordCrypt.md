@@ -9,8 +9,5 @@ github: https://gitlab.com/leogx9r/
 download: https://gitlab.com/leogx9r/DiscordCrypt/blob/master/src/discordCrypt.plugin.js
 support: https://gitlab.com/leogx9r/DiscordCrypt/issues
 tags:
-images:
-  - name:
-    image:
 layout: product
 ---

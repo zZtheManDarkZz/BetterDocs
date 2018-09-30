@@ -7,8 +7,5 @@ github: https://github.com/Arashiryuu/
 download: https://github.com/Arashiryuu/crap/blob/master/doesNotEqualsInsertion.plugin.js
 support: https://github.com/Arashiryuu/crap/issues
 tags:
-images:
-  - name: 
-    image: 
 layout: product
 ---

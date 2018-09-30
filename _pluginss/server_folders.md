@@ -16,8 +16,5 @@ github: https://github.com/mwittrien/
 download: https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/ServerFolders
 support: https://discord.gg/Z7PBux5
 tags:
-images:
-  - name: 
-    image: 
 layout: product
 ---
