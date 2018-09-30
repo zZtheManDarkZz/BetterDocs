@@ -14,7 +14,8 @@ search: true
 			<h2>Plugins ({{ site.pluginss | size }})</h2>
 			<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
 			<ul class="product-list" id="product-list">
-				{% for plugins in site.pluginss %}
+				{% assign sortedPluginss = site.pluginss | sort: 'title' %}
+				{% for plugins in sortedPluginss %}
 					<li>
 						<div class="styles">
 						<!-- {% include product-styles.html product=plugins %} -->

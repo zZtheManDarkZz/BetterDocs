@@ -138,6 +138,14 @@ input#search-input::placeholder {
     color: #fff;
     text-indent: 10px;
 }
+@keyframes context-open-new {
+0% {
+    transform: scale(1, 0.8); } 
+}
+@keyframes opacity {
+from {
+    opacity: 0; } 
+}
 ::-webkit-scrollbar-button {
     display: none !important;
     border-radius: 10px !important;
