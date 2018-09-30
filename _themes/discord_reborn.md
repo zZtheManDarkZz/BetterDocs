@@ -12,7 +12,5 @@ tags:
 images:
   - name: Discord Reborn Preview
     image: /images/products/discord_reborn/preview.jpg
-  - name: Discord Reborn Discordapp main page preview
-    image: /images/products/clearvision/amethyst_dark.png
 layout: product
 ---
