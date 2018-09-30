@@ -18,7 +18,7 @@ layout: default
 						<div class="flex-row">
 						<div class="style-picker">
 							{% for style in page.images %}
-							<div style="background-color: #e6e6e6" data-item-id="{{ forloop.index }}"></div>
+							<div style="background-color: #e6e6e6" data-item-id="{{ forloop.index }}"><img alt="{{ style.name }}" title="{{ style.name }}" class="img-preview" src="{{ style.image }}"></div>
 							{% endfor %}
 						</div>
 						{% if page.demo %}
