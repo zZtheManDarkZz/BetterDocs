@@ -14,6 +14,7 @@
 		<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet">
 
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			<!--Google Analytics Key-->
 			<script>
 				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 				ga('create', '{{ site.google_analytics_key }}', 'auto');
@@ -27,6 +28,11 @@
 			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 			})(window,document,'script','dataLayer','GTM-NG6W33N');</script>
 			<!-- End Google Tag Manager -->
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Popular Ad -->
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
 		{% endif %}
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -70,7 +76,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</section>
 		</header>
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-1998206533560539"
+			data-ad-slot="6545618600"
+			data-ad-format="auto"
+			data-full-width-responsive="true">
+		</ins>
 		{{ content }}
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-1998206533560539"
+			data-ad-slot="6545618600"
+			data-ad-format="auto"
+			data-full-width-responsive="true">
+		</ins>
 		<footer>
 			<div class="container">
 				<ul class="footer-columns">
