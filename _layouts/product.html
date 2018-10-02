@@ -50,6 +50,9 @@ layout: default
 				</div>
 			</div>
 		</div>
+		{% if page.ghcommentid %}
+		{% include comments.html %}
+		{% endif %}
 	</section>
 </div>
 

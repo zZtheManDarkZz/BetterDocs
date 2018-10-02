@@ -13,4 +13,5 @@ images:
   - name: Discord Reborn Preview
     image: /images/products/discord_reborn/preview.jpg
 layout: product
+ghcommentid: 4
 ---
