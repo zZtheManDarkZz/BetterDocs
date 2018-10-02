@@ -43,7 +43,7 @@ function DoGithubComments(comment_id, page_id)
 
                 // Add post button to first page
                 if (page_id == 1)
-                    $("#gh-comments-list").append("<div class='button small'><a href='" + url + "#new_comment_field' rel='nofollow'>Comment on post</a></div>");
+                    $("#gh-comments-list").append("<div class='button small'><a href='" + url + "#new_comment_field' rel='nofollow'>Leave a Review</a></div>");
 
                 // Individual comments
                 $.each(comments, function(i, comment) {
