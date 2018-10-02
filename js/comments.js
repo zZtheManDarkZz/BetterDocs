@@ -25,7 +25,7 @@ function DoGithubComments(comment_id, page_id)
         page_id = 1;
 
     var api_url = "https://betterdocs-comments.herokuapp.com/repos/" + repo_name;
-    var api_issue_url = "https://api.github.com/repos" + "/issues/" + comment_id;
+    var api_issue_url = "https://api.github.com/repos/MrRobotjs/BetterDocs" + "/issues/" + comment_id;
     var api_comments_url = api_url + "/issues/" + comment_id + "/comments" + "?page=" + page_id;
 
     var url = "https://github.com/MrRobotjs/BetterDocs/issues/" + comment_id;
@@ -54,10 +54,17 @@ function DoGithubComments(comment_id, page_id)
                     t += "<img src='" + comment.user.avatar_url + "' width='34px'>";
                     t += "<div class='user'><b><a href='" + comment.user.html_url + "'>" + comment.user.login + "</a></b></div>";
                     t += " ";
-                    t += "<div class='date'><em>" + date.toUTCString() + "</em></div>";
+                    t += "<div class='badge'>" + comment.author_association + "</div><div class='date'><em>" + date.toUTCString() + "</em></div>";
                     t += "<div id='gh-comment-hr'></div>";
                     t += comment.body_html;
-                    t += "</div>";
+                    t += "<div class='comment-reactions-options'>";
+                    t += "<a href='" + comment.html_url +" target='blank'><div class='reaction' name='input[content]' type='submit' value='Dislike' count='" + comment.reactions["-1"] + "' >" + comment.reactions["-1"] + "</div></a>"
+                    t += "<a href='" + comment.html_url +" target='blank'><div class='reaction' name='input[content]' type='submit' value='Like' count='" + comment.reactions["+1"] + "' >" + comment.reactions["+1"] + "</div></a>"
+                    t += "<a href='" + comment.html_url +" target='blank'><div class='reaction' name='input[content]' type='submit' value='Laugh' count='" + comment.reactions.laugh + "' >" + comment.reactions.laugh + "</div></a>"
+                    t += "<a href='" + comment.html_url +" target='blank'><div class='reaction' name='input[content]' type='submit' value='Hooray' count='" + comment.reactions.hooray + "' >" + comment.reactions.hooray + "</div></a>"
+                    t += "<a href='" + comment.html_url +" target='blank'><div class='reaction' name='input[content]' type='submit' value='Confused' count='" + comment.reactions.confused + "'>" + comment.reactions.confused + "</div></a>"
+                    t += "<a href='" + comment.html_url +" target='blank'><div class='reaction' name='input[content]' type='submit' value='Heart' count='" + comment.reactions.heart + "'>" + comment.reactions.heart + "</div></a>"
+                    t += "</div></div>";
                     $("#gh-comments-list").append(t);
                 });
 

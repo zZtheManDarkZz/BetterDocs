@@ -1,0 +1,43 @@
+[
+    {
+        "url": "https://api.github.com/repos/MrRobotjs/BetterDocs/issues/comments/426125143",
+        "html_url": "https://github.com/MrRobotjs/BetterDocs/issues/4#issuecomment-426125143",
+        "issue_url": "https://api.github.com/repos/MrRobotjs/BetterDocs/issues/4",
+        "id": 426125143,
+        "node_id": "MDEyOklzc3VlQ29tbWVudDQyNjEyNTE0Mw==",
+        "user": {
+            "login": "MrRobotjs",
+            "id": 39032787,
+            "node_id": "MDQ6VXNlcjM5MDMyNzg3",
+            "avatar_url": "https://avatars2.githubusercontent.com/u/39032787?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/MrRobotjs",
+            "html_url": "https://github.com/MrRobotjs",
+            "followers_url": "https://api.github.com/users/MrRobotjs/followers",
+            "following_url": "https://api.github.com/users/MrRobotjs/following{/other_user}",
+            "gists_url": "https://api.github.com/users/MrRobotjs/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/MrRobotjs/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/MrRobotjs/subscriptions",
+            "organizations_url": "https://api.github.com/users/MrRobotjs/orgs",
+            "repos_url": "https://api.github.com/users/MrRobotjs/repos",
+            "events_url": "https://api.github.com/users/MrRobotjs/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/MrRobotjs/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "created_at": "2018-10-02T02:22:45Z",
+        "updated_at": "2018-10-02T02:23:50Z",
+        "author_association": "OWNER",
+        "body_html": "<p>This is a comment</p>",
+        "reactions": {
+            "url": "https://api.github.com/repos/MrRobotjs/BetterDocs/issues/comments/426125143/reactions",
+            "total_count": 1,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 1
+        }
+    }
+]
