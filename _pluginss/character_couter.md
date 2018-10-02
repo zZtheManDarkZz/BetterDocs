@@ -8,4 +8,5 @@ download: https://github.com/Inve1951/BetterDiscordStuff/blob/master/plugins/Cha
 support: https://github.com/Inve1951/BetterDiscordStuff/issues
 tags:
 layout: product
+ghcommentid: 39
 ---

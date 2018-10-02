@@ -11,4 +11,5 @@ download: https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/E
 support: https://discord.gg/Z7PBux5
 tags:
 layout: product
+ghcommentid: 45
 ---

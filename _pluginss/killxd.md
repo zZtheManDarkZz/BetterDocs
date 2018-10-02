@@ -8,4 +8,5 @@ download: https://github.com/Arashiryuu/crap/blob/master/ToastIntegrated/KillXD/
 support: https://github.com/Arashiryuu/crap/issues
 tags:
 layout: product
+ghcommentid: 48
 ---

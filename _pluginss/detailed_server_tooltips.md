@@ -13,4 +13,5 @@ images:
   - name: Detailed Server Tooltips Preview - Plugin Settings
     image: https://i.imgur.com/UhcM8Ik.png
 layout: product
+ghcommentid: 40
 ---

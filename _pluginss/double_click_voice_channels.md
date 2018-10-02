@@ -8,4 +8,5 @@ download: https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/Double
 support: https://discord.gg/yNqzuJa
 tags:
 layout: product
+ghcommentid: 43
 ---

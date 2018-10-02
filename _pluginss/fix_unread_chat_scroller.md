@@ -8,4 +8,5 @@ download: https://github.com/Mega-Mewthree/BetterDiscordPlugins/tree/master/Plug
 support: https://discordapp.com/invite/ZYND2Xd
 tags:
 layout: product
+ghcommentid: 46
 ---

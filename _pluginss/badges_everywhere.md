@@ -8,4 +8,5 @@ download: https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/B
 support: https://discordapp.com/invite/Z7PBux5
 tags:
 layout: product
+ghcommentid: 37
 ---

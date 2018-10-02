@@ -15,4 +15,5 @@ images:
   - name: Pin Plugins And Themes Preview - Unpinning
     image: https://i.imgur.com/iYZJ6kh.png
 layout: product
+ghcommentid: 50
 ---
