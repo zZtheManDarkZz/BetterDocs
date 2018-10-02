@@ -24,7 +24,7 @@ function DoGithubComments(comment_id, page_id)
     if (page_id === undefined)
         page_id = 1;
 
-    var api_url = "https://api.github.com/repos/" + repo_name;
+    var api_url = "https://betterdocs-comments.herokuapp.com/repos/" + repo_name;
     var api_issue_url = api_url + "/issues/" + comment_id;
     var api_comments_url = api_url + "/issues/" + comment_id + "/comments" + "?page=" + page_id;
 
