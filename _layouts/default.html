@@ -5,12 +5,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	{% if page.image %}
-	<meta content="{{ page.image }}" property="og:image">
+	{% for image in page.images limit: 1 %}
+	{% if page.images %}
+	<meta content="{{ image.image }}" property="og:image">
 	{% else %}
 	<meta content="/siteicon.png" property="og:image">
 	{% endif %}
+	{% endfor %}
 	{% if page.categories %}
 	{% for category in page.categories limit:1 %}
 	<meta content="{{ category }}" property="article:section">
