@@ -58,12 +58,12 @@ function DoGithubComments(comment_id, page_id)
                     t += "<div id='gh-comment-hr'></div>";
                     t += comment.body_html;
                     t += "<div class='comment-reactions-options'>";
-                    t += "<a href='" + comment.html_url +" target='blank'><div class='reaction' name='input[content]' type='submit' value='Dislike' count='" + comment.reactions["-1"] + "' >" + comment.reactions["-1"] + "</div></a>"
-                    t += "<a href='" + comment.html_url +" target='blank'><div class='reaction' name='input[content]' type='submit' value='Like' count='" + comment.reactions["+1"] + "' >" + comment.reactions["+1"] + "</div></a>"
-                    t += "<a href='" + comment.html_url +" target='blank'><div class='reaction' name='input[content]' type='submit' value='Laugh' count='" + comment.reactions.laugh + "' >" + comment.reactions.laugh + "</div></a>"
-                    t += "<a href='" + comment.html_url +" target='blank'><div class='reaction' name='input[content]' type='submit' value='Hooray' count='" + comment.reactions.hooray + "' >" + comment.reactions.hooray + "</div></a>"
-                    t += "<a href='" + comment.html_url +" target='blank'><div class='reaction' name='input[content]' type='submit' value='Confused' count='" + comment.reactions.confused + "'>" + comment.reactions.confused + "</div></a>"
-                    t += "<a href='" + comment.html_url +" target='blank'><div class='reaction' name='input[content]' type='submit' value='Heart' count='" + comment.reactions.heart + "'>" + comment.reactions.heart + "</div></a>"
+                    t += "<a href='" + comment.html_url +"' target='blank'><div class='reaction' name='input[content]' type='submit' value='Dislike' count='" + comment.reactions["-1"] + "' >" + comment.reactions["-1"] + "</div></a>"
+                    t += "<a href='" + comment.html_url +"' target='blank'><div class='reaction' name='input[content]' type='submit' value='Like' count='" + comment.reactions["+1"] + "' >" + comment.reactions["+1"] + "</div></a>"
+                    t += "<a href='" + comment.html_url +"' target='blank'><div class='reaction' name='input[content]' type='submit' value='Laugh' count='" + comment.reactions.laugh + "' >" + comment.reactions.laugh + "</div></a>"
+                    t += "<a href='" + comment.html_url +"' target='blank'><div class='reaction' name='input[content]' type='submit' value='Hooray' count='" + comment.reactions.hooray + "' >" + comment.reactions.hooray + "</div></a>"
+                    t += "<a href='" + comment.html_url +"' target='blank'><div class='reaction' name='input[content]' type='submit' value='Confused' count='" + comment.reactions.confused + "'>" + comment.reactions.confused + "</div></a>"
+                    t += "<a href='" + comment.html_url +"' target='blank'><div class='reaction' name='input[content]' type='submit' value='Heart' count='" + comment.reactions.heart + "'>" + comment.reactions.heart + "</div></a>"
                     t += "</div></div>";
                     $("#gh-comments-list").append(t);
                 });
