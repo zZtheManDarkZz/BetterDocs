@@ -15,5 +15,6 @@ images:
 layout: product
 ghcommentid: #0
 
-[//]: # (The number to your issue so it can display comments) 
+[//]: # (To activate comments create an issue on my repo with the title format "Comments: {name} [Plugin] and replace "#0" with the issue number without the hashtag)
+
 ---
