@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	{% if page.image %}
-	<meta content="/img/srcset/{{ page.image }}" property="og:image">
+	<meta content="{{ page.image }}" property="og:image">
 	{% else %}
-	<meta content="/img/logo-high-resolution.png" property="og:image">
+	<meta content="/siteicon.png" property="og:image">
 	{% endif %}
 	{% if page.categories %}
 	{% for category in page.categories limit:1 %}
@@ -23,6 +23,10 @@
 	{% endif %}
 
 	{% seo %}
+	{% if page.description_markdown %}
+	<meta property="og:description" content="{{ page.description_markdown }}">
+	<meta property="description" content="{{ page.description_markdown }}">
+	{% endif %}
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
