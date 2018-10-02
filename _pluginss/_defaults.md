@@ -13,4 +13,7 @@ images:
   - name: Image Name
     image: https://imgur.com/upload
 layout: product
+ghcommentid: #0
+
+[//]: # (The number to your issue so it can display comments) 
 ---
