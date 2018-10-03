@@ -7,7 +7,7 @@ description_markdown: >-
 download: https://github.com/MrRobotjs/Discord-Reborn
 demo: https://rawgit.com/0mniscient/Discord-Themes/master/Themes/Discord%20Reborn.theme.css
 support: https://discord.gg/D4cAkXX
-style: dark
+style: dark #testing
 tags:
 images:
   - name: Discord Reborn Preview
