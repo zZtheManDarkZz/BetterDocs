@@ -1,20 +1,17 @@
 ---
-title: Plugin
-author: Author
-description_markdown: >-
-  A Description
+title: {Plugin Name} #* Anything with * is REQUIRED
+author: {Author Name} #*
 github: https://github.com/
-download: https://github.com/
-support: 
+description_markdown: >- #* Markdown is allowed
+  A Description
+download: https://github.com/ #* Github isn't required but if it isn't used then further inspection will happen
+support: # A link to allow people to get support or give feedback for the Plugin
 tags:
 images:
-  - name: Image Name
-    image: https://imgur.com/upload
-  - name: Image Name
-    image: https://imgur.com/upload
-layout: product
+  - name: {Plugin Name} Preview
+    image: https://imgur.com/upload # Direct image link should only be used here. Imgur isn't required but if it isn't used then further inspection will happen
+  - name: {Plugin Name} Preview - {Image Name}
+    image: https://imgur.com/upload # Direct image link should only be used here. Imgur isn't required but if it isn't used then further inspection will happen
+layout: product #* DON'T CHANGE
 ghcommentid: #0
-
-[//]: # (To activate comments create an issue on my repo with the title format "Comments: {name} [Plugin] and replace "#0" with the issue number without the hashtag)
-
 ---
