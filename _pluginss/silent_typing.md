@@ -8,4 +8,5 @@ download: https://github.com/noodlebox/betterdiscord-plugins/blob/master/SilentT
 support: 
 tags:
 layout: product
+ghcommentid: 62
 ---

@@ -15,4 +15,5 @@ images:
   - name: Unread Count Badges - Plugins Setting Page
     image: https://i.imgur.com/MHhMWyT.png
 layout: product
+ghcommentid: 64
 ---

@@ -8,4 +8,5 @@ download: https://github.com/XFoxPrower/Quick-Open-Link
 support: https://github.com/XFoxPrower/Quick-Open-Link/issues
 tags:
 layout: product
+ghcommentid: 53
 ---
