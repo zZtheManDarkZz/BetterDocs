@@ -11,11 +11,11 @@ style: dark
 tags:
 images:
   - name: ClearVision Amethyst Preview
-    image: https://i.imgur.com/yMGEr2S.jpg
+    image: /images/themes/ClearVision_-_Amethyst_Preview.jpg
   - name: ClearVision Amethyst Preview - Light Appearance
-    image: https://i.imgur.com/1aYUGkz.jpg
+    image: /images/themes/ClearVision_-_Amethyst_Preview_-_Light_Appearance.jpg
   - name: ClearVision Amethyst Preview - Appearance Settings
-    image: https://i.imgur.com/cnVpId3.jpg
+    image: /images/themes/ClearVision_-_Amethyst_Preview_-_Appearance_Settings.jpg
     
 layout: product
 ghcommentid: 29

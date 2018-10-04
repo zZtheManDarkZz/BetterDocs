@@ -11,11 +11,11 @@ style: dark
 tags:
 images:
   - name: ClearVision Emerald Preview
-    image: https://i.imgur.com/p4MP4dM.jpg
+    image: /images/themes/ClearVision_-_Emerald_Preview.jpg
   - name: ClearVision Emerald Preview - Light Appearance
-    image: https://i.imgur.com/ov3HQuR.jpg
+    image: /images/themes/ClearVision_-_Emerald_Preview_-_Light_Appearance.jpg
   - name: ClearVision Emerald Preview - Appearance Settings
-    image: https://i.imgur.com/vQJzpFU.jpg
+    image: /images/themes/ClearVision_-_Emerald_Preview_-_Appearance_Settings.jpg
     
 layout: product
 ghcommentid: 30

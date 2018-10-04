@@ -11,11 +11,11 @@ style: dark
 tags:
 images:
   - name: ClearVision Sapphire Preview
-    image: https://i.imgur.com/Fmpt9nL.jpg
+    image: /images/themes/ClearVision_-_Sapphire_Preview.jpg
   - name: ClearVision Sapphire Preview - Light Appearance
-    image: https://i.imgur.com/pYnrx7W.jpg
+    image: /images/themes/ClearVision_-_Sapphire_Preview_-_Light_Appearance.jpg
   - name: ClearVision Sapphire Preview - Appearance Settings
-    image: https://i.imgur.com/7AONzn3.jpg
+    image: /images/themes/ClearVision_-_Sapphire_Preview_-_Appearance_Settings.jpg
     
 layout: product
 ghcommentid: 32

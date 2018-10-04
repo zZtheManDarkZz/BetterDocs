@@ -11,7 +11,7 @@ style: light
 tags:
 images:
   - name: Better Light
-    image: https://i.imgur.com/GFjx0TA.png
+    image: /images/themes/Better_Light_Preview.png
 layout: product
 ghcommentid: 7
 ---

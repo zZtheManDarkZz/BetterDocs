@@ -11,15 +11,15 @@ style: dark
 tags:
 images:
   - name: Coloured Discord Preview
-    image: https://i.imgur.com/lXcbi8U.png
+    image: /images/themes/Coloured_Discord_Preview.png
   - name:  Coloured Discord Preview - Pink
-    image: https://i.imgur.com/XZV0ZPJ.png
+    image: /images/themes/Coloured_Discord_Preview_-_Pink.png
   - name:  Coloured Discord Preview - Blue
-    image: https://i.imgur.com/uJ1BEcm.png
+    image: /images/themes/Coloured_Discord_Preview_-_Cyan.png
   - name:  Coloured Discord Preview - Yellow
-    image: https://i.imgur.com/1GVDxrc.png
+    image: /images/themes/Coloured_Discord_Preview_-_Yellow.png
   - name:  Coloured Discord Preview - Red
-    image: https://i.imgur.com/mRloNrE.png
+    image: /images/themes/Coloured_Discord_Preview_-_Red.png
     
 layout: product
 ghcommentid: 13

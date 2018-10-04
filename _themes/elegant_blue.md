@@ -11,13 +11,13 @@ style: dark
 tags:
 images:
   - name: Elegant Blue Preview
-    image: https://i.imgur.com/cXjajB0.png
+    image: /images/themes/Elegant_Blue_Preview.png
   - name: Elegant Blue Preview - Server Notifications
-    image: https://i.imgur.com/iCCb28a.jpg
+    image: /images/themes/Elegant_Blue_Preview_-_Server_Notifications.png
   - name: Elegant Blue Preview - Search
-    image: https://i.imgur.com/DMv07Xq.jpg
+    image: /images/themes/Elegant_Blue_Preview_-_Search.png
   - name: Elegant Blue Preview - Settings Page
-    image: https://i.imgur.com/pxAldm5.png
+    image: /images/themes/Elegant_Blue_Preview_-_Settings_Page.png
     
 layout: product
 ghcommentid: 33

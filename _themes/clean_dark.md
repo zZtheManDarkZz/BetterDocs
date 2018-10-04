@@ -11,7 +11,7 @@ style: dark
 tags:
 images:
   - name: Clean Dark Preview
-    image: https://i.imgur.com/WaRyh1X.png
+    image: /images/themes/Clean_Dark_Preview.png
 layout: product
 ghcommentid: 11
 ---

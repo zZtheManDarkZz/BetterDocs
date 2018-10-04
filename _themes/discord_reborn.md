@@ -11,7 +11,7 @@ style: dark
 tags:
 images:
   - name: Discord Reborn Preview
-    image: /images/products/discord_reborn/preview.jpg
+    image: /images/themes/Discord_Reborn_Preview.jpg
 layout: product
 ghcommentid: 4
 ---

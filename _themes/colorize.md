@@ -11,7 +11,7 @@ style: dark
 tags:
 images:
   - name: Colorize Preview
-    image: https://i.imgur.com/m3gImAv.gif
+    image: /images/themes/Colorize_Preview.gif
     
 layout: product
 ghcommentid: 12

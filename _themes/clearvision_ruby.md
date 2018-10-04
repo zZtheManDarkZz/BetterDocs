@@ -11,11 +11,11 @@ style: dark
 tags:
 images:
   - name: ClearVision Ruby Preview
-    image: https://i.imgur.com/CoKghZY.png
+    image: /images/themes/ClearVision_-_Ruby_Preview.png
   - name: ClearVision Ruby Preview - Light Appearance
-    image: https://i.imgur.com/78HPof4.jpg
+    image: /images/themes/ClearVision_-_Ruby_Preview_-_Light_Appearance.jpg
   - name: ClearVision Ruby Preview - Appearance Settings
-    image: https://i.imgur.com/hhWe5dh.jpg
+    image: /images/themes/ClearVision_-_Ruby_Preview_-_Appearance_Settings.jpg
     
 layout: product
 ghcommentid: 31

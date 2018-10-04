@@ -11,7 +11,7 @@ style: dark
 tags:
 images:
   - name: Dark Matter Preview
-    image: https://i.imgur.com/mqadDnZ.jpg
+    image: /images/themes/Dark_Matter_Preview.jpg
     
 layout: product
 ghcommentid: 14

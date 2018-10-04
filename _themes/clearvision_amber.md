@@ -11,11 +11,11 @@ style: dark
 tags:
 images:
   - name: ClearVision Amber Preview
-    image: https://i.imgur.com/iWXiIXZ.jpg
+    image: /images/themes/ClearVision_-_Amber_Preview.jpg
   - name: ClearVision Amber Preview - Light Appearance
-    image: https://i.imgur.com/mbDUt2O.jpg
+    image: /images/themes/ClearVision_-_Amber_Preview_-_Light_Appearance.jpg
   - name: ClearVision Amber Preview - Appearance Settings
-    image: https://i.imgur.com/Dw8Cmd2.jpg
+    image: /images/themes/ClearVision_-_Amber_Preview_-_Appearance_Settings.jpg
     
 layout: product
 ghcommentid: 28

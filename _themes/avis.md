@@ -11,9 +11,9 @@ style: dark
 tags:
 images:
   - name: Avis Preview
-    image: https://i.imgur.com/lUFJ2eR.jpg
+    image: /images/themes/Avis_Preview.jpg
   - name: Avis Preview - Keybind Settings Page
-    image: https://i.imgur.com/M9C2ACK.png
+    image: /images/themes/Avis_Preview_-_Keybind_Settings_Page.png
     
 layout: product
 ghcommentid: 6
