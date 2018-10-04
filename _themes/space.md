@@ -11,13 +11,13 @@ style: dark
 tags:
 images:
   - name: Space Preview
-    image: https://i.imgur.com/NecinsE.jpg
+    image: /images/themes/Space_Preview.jpg
   - name: Space Preview - Plugins Settings Page
-    image: https://i.imgur.com/LuX6jF6.jpg
+    image: /images/themes/Space_Preview_-_Plugins_Settings_Page.jpg
   - name: Space Preview - Voice Settings Page
-    image: https://i.imgur.com/BBZvN23.jpg
+    image: /images/themes/Space_Preview_-_Voice_Settings_Page.jpg
   - name: Space Preview - Friends Page
-    image: https://i.imgur.com/1Vowhkk.jpg
+    image: /images/themes/Space_Preview_-_Friends_Page.jpg
 layout: product
 ghcommentid: 24
 ---

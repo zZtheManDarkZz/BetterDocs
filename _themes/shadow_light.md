@@ -11,7 +11,7 @@ style: dark
 tags:
 images:
   - name: Shadow Light Preview
-    image: https://i.imgur.com/idtNzdH.jpg
+    image: /images/themes/Shadow_Light_Preview.jpg
 layout: product
 ghcommentid: 23
 ---

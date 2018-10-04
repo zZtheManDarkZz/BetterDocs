@@ -11,7 +11,7 @@ style: dark
 tags:
 images:
   - name: Spotify Discord Preview
-    image: https://i.imgur.com/1G3RoEH.png
+    image: /images/themes/Spotify_Discord_Preview.png
 layout: product
 ghcommentid: 25
 ---

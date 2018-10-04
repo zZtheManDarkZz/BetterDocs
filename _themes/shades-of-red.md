@@ -11,7 +11,7 @@ style: dark
 tags:
 images:
   - name: Shades of Red Preview
-    image: https://i.imgur.com/z8nI3He.jpg
+    image: /images/themes/Shades_of_Red_Preview.jpg
     
 layout: product
 ghcommentid: 22

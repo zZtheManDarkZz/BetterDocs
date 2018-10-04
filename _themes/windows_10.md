@@ -11,13 +11,13 @@ style: dark
 tags:
 images:
   - name: Windows 10 Preview
-    image: https://i.imgur.com/3Om8fGa.png
+    image: /images/themes/Windows_10_Preview.png
   - name: Windows 10 Preview - Notifications Setting Page
-    image: https://i.imgur.com/bJYjyHa.png
+    image: /images/themes/Windows_10_Preview_-_Notifications_Setting_Page.png
   - name: Windows 10 Preview - Delete Message
-    image: https://i.imgur.com/IQ7EK4P.png
+    image: /images/themes/Windows_10_Preview_-_Delete_Message.png
   - name: Windows 10 Preview - Friends Modal
-    image: https://i.imgur.com/zC05kPW.png
+    image: /images/themes/Windows_10_Preview_-_Friends_Modal.png
 layout: product
 ghcommentid: 27
 ---

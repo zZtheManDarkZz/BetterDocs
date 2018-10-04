@@ -11,13 +11,13 @@ style: dark
 tags:
 images:
   - name: Thanos Preview
-    image: https://i.imgur.com/U7QfY0M.jpg
+    image: /images/themes/Thanos_Preview.jpg
   - name: Thanos Preview - Emotes Settings Page
-    image: https://i.imgur.com/kLqU2Yh.png
+    image: /images/themes/Thanos_Preview_-_Emotes_Settings_Page.png
   - name: Thanos Preview - Recent Mentions Popup
-    image: https://i.imgur.com/puTQoFj.png
+    image: /images/themes/Thanos_Preview_-_Recent_Mentions_Popup.png
   - name: Thanos Preview - Upload Modal
-    image: https://i.imgur.com/eNm38oz.png
+    image: /images/themes/Thanos_Preview_-_Upload_Modal.png
 layout: product
 ghcommentid: 26
 ---
