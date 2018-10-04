@@ -106,20 +106,20 @@ search: true
 			$("ul#product-list").sortList();
 		});
 		
-		// selector to parent element (best approach by id)
+		selector to parent element (best approach by id)
 		var parent = document.querySelector("ul#product-list"),
-			// take items (parent.children) into array
+			take items (parent.children) into array
 			itemsArray = Array.prototype.slice.call(parent.children);
-		// sort items in array by custom criteria
+		sort items in array by custom criteria
 		itemsArray.sort(function(a, b) {
-			// inner text suits best (even when formated somehow)
+			inner text suits best (even when formated somehow)
 			if (a.innerText < b.innerText) return -1;
 			if (a.innerText > b.innerText) return 1;
 			return 0;
 		});
-		// reorder items in the DOM
+		reorder items in the DOM
 		itemsArray.forEach(function(item) {
-			// one by one move to the end in correct order
+			one by one move to the end in correct order
 			parent.appendChild(item);
 		});*/
 		var count = $('ul#product-list').children().length;
