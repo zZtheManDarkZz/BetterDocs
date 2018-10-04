@@ -9,16 +9,15 @@ baseurl:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
+image: /siteicon.png
 description: A Discord enhancement project. Free quality Themes and Plugins for Discord and easy installation instructions for BetterDiscord and more!
 author:
-  name: Chris
+  name: Christopher
   email: betterdocs@support.com
-  twitter: BetterDocs # twitter username without the @ symbol
-  phone: ""
 social:
-  name: BetterDocs
+  name: Github
   links:
-    - https://github.com/MrRobotjs
+    - https://github.com/MrRobotjs/BetterDocs/
 
 # -----
 # Build
@@ -97,10 +96,6 @@ social_icons:
   - RSS
 
 _comments:
-  map: Update the map location and display settings.
-  latitude: Coordinates for the center marker on the map.
-  longitude: Coordinates for the center marker on the map.
-  zoom: The zoom level for the map.
   pricing_table: Update the information in the pricing tables.
   highlight: Emphasis the text
   color: The background color used in the plan name and call to action.

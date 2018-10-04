@@ -8,10 +8,9 @@
 	{% for image in page.images limit: 1 %}
 	{% if page.images %}
 	<meta content="{{ image.image }}" property="og:image">
-	{% else %}
-	<meta content="/siteicon.png" property="og:image">
 	{% endif %}
 	{% endfor %}
+	<meta content="/siteicon.png" property="og:image">
 	{% if page.categories %}
 	{% for category in page.categories limit:1 %}
 	<meta content="{{ category }}" property="article:section">
@@ -22,12 +21,12 @@
 	<meta content="{{ tag }}" property="article:tag">
 	{% endfor %}
 	{% endif %}
-
-	{% seo %}
 	{% if page.description_markdown %}
 	<meta property="og:description" content="{{ page.description_markdown }}">
 	<meta property="description" content="{{ page.description_markdown }}">
 	{% endif %}
+
+	{% seo %}
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
