@@ -11,9 +11,9 @@ style: dark
 tags:
 images:
   - name: Random Preview
-    image: https://i.imgur.com/lcCdUm9.png
+    image: /images/themes/Random_Preview.png
   - name: Random Preview - With a background
-    image: https://i.imgur.com/3LE0Mnk.png
+    image: /images/themes/Random_Preview_-_With_a_background.png
     
 layout: product
 ghcommentid: 21

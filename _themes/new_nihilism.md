@@ -22,7 +22,7 @@ style: dark
 tags:
 images:
   - name: New Nihilism Preview
-    image: https://i.imgur.com/TXml33L.png
+    image: /images/themes/New_Nihilism_Preview.png
     
 layout: product
 ghcommentid: 18

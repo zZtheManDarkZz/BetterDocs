@@ -11,9 +11,9 @@ style: dark
 tags:
 images:
   - name: Rainbows Kittens Theme Preview
-    image: https://my.mixtape.moe/bndhjf.png
+    image: /images/themes/Rainbows_Kittens_Theme_Preview.png
   - name: Rainbows Kittens Theme Preview - Channels Preview
-    image: https://my.mixtape.moe/dgkyov.png
+    image: /images/themes/Rainbows_Kittens_Theme_Preview_-_Channels_Preview.png
     
 layout: product
 ghcommentid: 20

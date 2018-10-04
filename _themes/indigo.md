@@ -11,7 +11,7 @@ style: dark
 tags:
 images:
   - name: Indigo Preview
-    image: https://i.imgur.com/iOOg0Rj.png
+    image: /images/themes/Indigo_Preview.png
 layout: product
 ghcommentid: 15
 ---

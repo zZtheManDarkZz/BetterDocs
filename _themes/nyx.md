@@ -11,7 +11,7 @@ style: dark
 tags:
 images:
   - name: Nyx Preview
-    image: https://i.imgur.com/Y0x25PC.png
+    image: /images/themes/Nyx_Preview.png
 layout: product
 ghcommentid: 19
 ---

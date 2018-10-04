@@ -11,11 +11,11 @@ style: dark
 tags:
 images:
   - name: Material Discord Preview
-    image: https://i.imgur.com/yegXZNM.png
+    image: /images/themes/Material_Discord_Preview.png
   - name: Material Discord Preview - User Popout
-    image: https://i.imgur.com/2GSo4hU.png
+    image: /images/themes/Material_Discord_Preview_-_User_Popout.png
   - name: Material Discord Preview - User Status Picker
-    image: https://i.imgur.com/fY11UIy.gif
+    image: /images/themes/Material_Discord_Preview_-_User_Status_Picker.gif
     
 layout: product
 ghcommentid: 16

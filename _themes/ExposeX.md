@@ -11,11 +11,11 @@ style: dark
 tags:
 images:
   - name: ExposeX Preview
-    image: https://imgur.com/ZXUH9EY.png
-  - name: Custom Background
-    image: https://i.imgur.com/Ra6hfBB.jpg
-  - name: Custom Colors
-    image: https://i.imgur.com/231yHKP.png
+    image: /images/themes/Expose_X_Preview.png
+  - name: ExposeX Preview - Custom Background
+    image: /images/themes/Expose_X_Preview_-_Custom_Background.jpg
+  - name: ExposeX Preview - Custom Colors
+    image: /images/themes/Expose_X_Preview_-_Custom_Colors.png
 layout: product
 ghcommentid: 6
 ---

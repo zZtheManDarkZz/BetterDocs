@@ -11,7 +11,7 @@ style: dark
 tags:
 images:
   - name: Metro For Discord Preview
-    image: https://i.imgur.com/LY8r7KB.png
+    image: /images/themes/Metro_For_Discord_Preview.png
     
 layout: product
 ghcommentid: 17
