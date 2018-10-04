@@ -62,9 +62,13 @@ jekyll-archives:
   enabled:
     - categories
 
+compress_images:
+  images_path: "/images/**/*.{gif,png,jpg,jpeg,svg}"
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-compress-images
 
 exclude:
   - Gemfile
