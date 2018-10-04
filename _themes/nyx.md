@@ -11,7 +11,7 @@ style: dark
 tags:
 images:
   - name: Nyx Preview
-    image: https://my.mixtape.moe/jmgpky.png
+    image: https://i.imgur.com/Y0x25PC.png
 layout: product
 ghcommentid: 19
 ---

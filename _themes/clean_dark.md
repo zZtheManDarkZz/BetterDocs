@@ -11,7 +11,7 @@ style: dark
 tags:
 images:
   - name: Clean Dark Preview
-    image: https://my.mixtape.moe/yduivq.png
+    image: https://i.imgur.com/WaRyh1X.png
 layout: product
 ghcommentid: 11
 ---

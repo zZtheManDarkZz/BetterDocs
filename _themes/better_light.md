@@ -11,7 +11,7 @@ style: light
 tags:
 images:
   - name: Better Light
-    image: https://my.mixtape.moe/cwqiyd.png
+    image: https://i.imgur.com/GFjx0TA.png
 layout: product
 ghcommentid: 7
 ---
