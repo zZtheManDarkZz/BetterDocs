@@ -1,28 +1,39 @@
 .card-container.flex-row {
-    @media #{$above-tablet} {
+    @media #{$mid-point} {
         display: flex;
     }
 }
 .hero.flex-row {
-    @media #{$above-tablet} {
+    @media #{$mid-point} {
         display: flex;
         padding: 100px 0;
     }
 }
 
 .product-container {
-    .product-details {
-        @media #{$above-tablet} {
-        flex: 1;
+    @media #{$mid-point} {
+        margin-left: -40px;
         display: flex;
-        flex-direction: column;
-        margin-top: unset;
+    }
+    .product-details {
+        @media #{$mid-point} {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+    }
+    .styles {
+        @media #{$mid-point} {
+            margin-left: 40px !important;
+            display: initial;
         }
     }
 }
 
 input#search-input {
-    @media #{$above-tablet} {
+    @media #{$mid-point} {
     width: calc(100% - 450px);
     }
 }
@@ -32,6 +43,60 @@ header {
 	> .container {
         @media #{$mid-point} {
         background-color: transparent;
+        }
+    }
+}
+
+.page {
+	.styles {
+		.style-picker {
+            @media #{$mid-point} {
+                padding: unset;/*10px 0px 10px 7px*/
+                flex: 1;
+                overflow-x: auto;
+                overflow-y: hidden;
+                height: initial;
+                margin: initial;
+            }
+		}
+	}
+}
+
+.styles {
+	.style-picker {
+		> div {
+			img {
+                @media #{$mid-point} {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .button {
+        .btn {
+            @media #{$mid-point} {
+                font-size: inherit;
+                padding: 15px 30px;
+                margin: unset;
+            }
+        }
+    }
+}
+
+#product .styles {
+    @media #{$mid-point} {
+        padding: 20px;
+    }
+}
+
+div#gh-comments {
+    div#gh-comments-list { 
+        .button.small {
+            @media #{$mid-point} {
+                align-self: flex-end;
+                top: -45px;
+                margin-bottom: -25px;
+            }
         }
     }
 }

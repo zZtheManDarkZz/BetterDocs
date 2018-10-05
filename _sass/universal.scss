@@ -158,9 +158,9 @@ div#gh-comments {
         
         .button.small {
             display: -webkit-inline-box;
-            align-self: flex-end;
-            top: -45px;
-            margin-bottom: -25px;
+            top: unset;
+            margin: unset;
+            align-self: flex-start;
             position: relative;
 
             a {
