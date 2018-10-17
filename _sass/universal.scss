@@ -312,7 +312,7 @@ nav {
                     background-color: #ddd;
                 }
             }
-            &:hover {
+            &:hover, &:focus, &:active {
                 display: block;
             }
         }
