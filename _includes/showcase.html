@@ -1,0 +1,48 @@
+<section style="padding:unset;">
+    <div class="container">
+        <h2><a href="{{ site.url }}/themes/">Themes ({{ site.themes | size }})</a></h2>
+        <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
+        <ul class="product-list" id="themes">
+            {% for theme in site.themes limit: 3 %}
+                <li>
+                    <div class="styles">
+                    {% include product-styles.html product=theme %}
+                    <div class="product-details">
+                        <h4><a href="{{ theme.url }}">{{ theme.title }}</a></h4>
+                        <h5>by <b>{{ theme.author }}</b></h5>
+                        <div class="product-description">
+                            {{ theme.description_markdown | truncate: 105 | markdownify }}
+                        </div>
+                        {% if theme.price == nil %}
+                        {% else %}
+                        <p>${{ theme.price }}</p>
+                        {% endif %}
+                    </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <h2><a href="{{ site.url }}/plugins/">Plugins ({{ site.pluginss | size }})</a></h2>
+        <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
+            <ul class="product-list" id="plugins">
+            {% for plugins in site.pluginss limit: 3 %}
+                <li>
+                    <div class="styles">
+                    <!-- {% include product-styles.html product=plugins %} -->
+                    <div class="product-details">
+                        <h4><a href="{{ plugins.url }}">{{ plugins.title }}</a></h4>
+                        <h5>by <b>{{ plugins.author }}</b></h5>
+                        <div class="product-description">
+                            {{ plugins.description_markdown | truncate: 105 | markdownify }}
+                        </div>
+                        {% if plugins.price == nil %}
+                        {% else %}
+                        <p>${{ plugins.price }}</p>
+                        {% endif %}
+                    </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
