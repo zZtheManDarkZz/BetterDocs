@@ -29,7 +29,7 @@ header {
 		background-color: $brand-color;
 
 		@media #{$mid-point} {
-			padding: 15px 0px 15px 15px;
+			padding: 0px 0px 0px 15px;
 		}
 
 		nav {
@@ -45,14 +45,13 @@ header {
 			top: 11px;
 
 			@media #{$mid-point} {
-				top: 4px;
+				top: 19px;
 			}
 			svg {
 				height: 35px;
 				width: 35px;
 				transition: .2s linear width, .2s linear height;
 			}
-			
 			span {
 				font-size: 25px;
 			}
@@ -148,7 +147,7 @@ nav {
 
 		@media #{$mid-point} {
 			display: inline-block;
-			padding: 10px 17px 9px 10px;
+			padding: 25px 22px 24px 22px;
 		}
 
 
@@ -207,6 +206,7 @@ nav {
 			top: 12px;
 			font-size: .8em;
 			transition: border .3s ease;
+			padding: 10px 17px 9px 10px;
 
 
 			&:hover {
@@ -220,4 +220,18 @@ nav {
 		font-weight: bold;
 	}
 
+}
+
+header > .container.navbar-scroll {
+	nav {
+		a {
+			transition: .2s linear background-color;
+			&.active {
+				background-color: rgba(0, 0, 0, 0.05);
+			}
+			&:hover, &:active {
+				background-color: rgba(0, 0, 0, 0.05);
+			}
+		}
+	}
 }

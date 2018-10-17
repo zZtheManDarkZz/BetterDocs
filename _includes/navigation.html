@@ -9,7 +9,18 @@
 		{% if link.link == page.url %}
 			{% assign class = class | append: " active" %}
 		{% endif %}
+		{% if link.dropdown == nil %}
 		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
+		{% elsif link.dropdown %}
+		<div class="dropdown">
+		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
+		<div class="dropdown-content">
+			{% for drop_links in link.dropdown_links %}
+			<a href="{{ drop_links.link }}">{{ drop_links.name }}</a>
+			{% endfor %}
+		</div>
+		</div>
+		{% endif %}
 	{% endfor %}
 	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn" title="Edit navigation"><strong>&#9998;</strong></a>
 	<a href="https://github.com/rauenzi/BetterDiscordApp/releases" class="cart snipcart-checkout"><i class="material-icons">file_download</i>Download</a>

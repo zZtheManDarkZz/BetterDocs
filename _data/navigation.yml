@@ -6,6 +6,12 @@
   link: /themes/
   new_window: false
   highlight: false
+  dropdown: #true/nil (empty)
+  dropdown_links:
+  - name: bdd
+    link: /bdd/
+  - name: ed
+    link: /ed/
 - name: Plugins
   link: /plugins/
   new_window: false
@@ -18,3 +24,5 @@
   link: https://support.betterdocs.us
   new_window: false
   highlight: false
+
+# to add a dropdown add "dropdown: true" to any nav link
