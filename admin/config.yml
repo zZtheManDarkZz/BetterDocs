@@ -47,14 +47,15 @@ collections:
       - label: "Tags (Seperated by comma ',')" 
         name: "tags"
         widget: "string"
-      - label: "Github Comment ID" 
-        name: "ghcommentid"
-        widget: "number"
       - label: "Style (dark/light)" 
         name: "style"
         widget: "select"
         options: ["dark", "light"]
         default: "dark"
+      - label: "Github Comment ID" 
+        name: "ghcommentid"
+        widget: "number"
+        required: false
       - label: "Publish Date"
         name: "date" 
         widget: "datetime"
@@ -100,6 +101,7 @@ collections:
       - label: "Github Comment ID" 
         name: "ghcommentid"
         widget: "number"
+        required: false
       - label: "Publish Date"
         name: "date" 
         widget: "datetime"
