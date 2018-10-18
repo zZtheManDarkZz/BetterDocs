@@ -14,15 +14,81 @@ collections:
         name: "layout"
         widget: "hidden"
         default: "product"
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description_markdown", widget: "markdown"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Github", name: "github", widget: "string"}
-      - {label: "Download URL", name: "download", widget: "string"}
-      - {label: "Support URL", name: "support", widget: "string"}
-      - {label: "Demo URL", name: "demo", widget: "string", default: "https://rawcdn.githack.com/USER/REPO/master/"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Tags (Seperated by comma ',')", name: "style", widget: "string"}
-      - {label: "Style (dark/light)", name: "style", widget: "string", default: "dark"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Description"
+        name: "description_markdown"
+        widget: "markdown"
+      - label: "Author"
+        name: "author" 
+        widget: "string"
+      - label: "Github" 
+        name: "github"
+        widget: "string"
+      - label: "Download URL"
+        name: "download"
+        widget: "string"
+      - label: "Support URL"
+        name: "support"
+        widget: "string"
+      - label: "Demo URL"
+        name: "demo"
+        widget: "string"
+        default: "https://rawcdn.githack.com/USER/REPO/master/"
+      - label: "Image"
+        name: "image"
+        widget: "image"
+      - label: "Name"
+        name: "name"
+        widget: "string"
+      - label: "Tags (Seperated by comma ',')" 
+        name: "style"
+        widget: "string"
+      - label: "Style (dark/light)" 
+        name: "style"
+        widget: "string" 
+        default: "dark"
+      - label: "Publish Date"
+        name: "date" 
+        widget: "datetime"
+  - name: "plugins" # Used in routes, e.g., /admin/collections/blog
+    label: "Plugins" # Used in the UI
+    folder: "_pluginss/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "product"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Description"
+        name: "description_markdown"
+        widget: "markdown"
+      - label: "Author"
+        name: "author" 
+        widget: "string"
+      - label: "Github" 
+        name: "github"
+        widget: "string"
+      - label: "Download URL"
+        name: "download"
+        widget: "string"
+      - label: "Support URL"
+        name: "support"
+        widget: "string"
+      - label: "Image"
+        name: "image"
+        widget: "image"
+      - label: "Name"
+        name: "name"
+        widget: "string"
+      - label: "Tags (Seperated by comma ',')" 
+        name: "style"
+        widget: "string"
+      - label: "Publish Date"
+        name: "date" 
+        widget: "datetime"
