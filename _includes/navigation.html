@@ -23,5 +23,8 @@
 		{% endif %}
 	{% endfor %}
 	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn" title="Edit navigation"><strong>&#9998;</strong></a>
-	<a href="https://github.com/rauenzi/BetterDiscordApp/releases" class="cart snipcart-checkout"><i class="material-icons">file_download</i>Download</a>
+	<div class="cart snipcart-checkout button">
+		<a onclick="netlifyIdentity.open();"><span>Sign Up</span></a>
+		<a onclick="netlifyIdentity.open();"><span>Log In</span></a>
+	</div>
 </nav>

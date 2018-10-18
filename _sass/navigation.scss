@@ -176,7 +176,7 @@ nav {
 	}
 
 
-	a.cart {
+	.cart {
 		line-height: 1;
 
 		i {
@@ -197,20 +197,35 @@ nav {
 	}
 
 	@media #{$mid-point} {
-		a.cart {
-			border-radius: 43px;
+		.cart {
 			color: #fff;
-			border: 1px solid rgba(255,255,255, .4);
 			position: absolute;
-			right: 20px;
-			top: 12px;
+			right: 13px;
+			top: 0px;
 			font-size: .8em;
-			transition: border .3s ease;
-			padding: 10px 17px 9px 10px;
-
+			transition: .2s background-color linear;
+			padding: 16px 27px 16px 17px;
+			border-radius: unset;
+			border: unset;
 
 			&:hover {
 				border-color: #fff;
+			}
+			a {
+				transition: .2s linear background-color;
+				padding: 10px 25px 12px 25px;
+				&:first-child {
+					background-color: #fff;
+					span {
+						color: $brand-color;
+					}
+					&:hover {
+						background-color: rgba(#fff, 0.8)
+					}
+				}
+				&:hover {
+					background-color: rgba($brand-color, 0.8)
+				}
 			}
 		}
 	}
