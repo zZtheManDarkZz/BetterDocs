@@ -25,6 +25,12 @@ footer {
 		@media #{$mid-point} {
 			margin: -10px -60px 10px -60px;
 		}
+		.company-name {
+			svg {
+			height: 35px;
+			width: 35px;
+			}
+		}
 
 		& > li {
 			@media #{$mid-point} {

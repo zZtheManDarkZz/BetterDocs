@@ -45,11 +45,11 @@ header {
 			top: 11px;
 
 			@media #{$mid-point} {
-				top: 19px;
+				top: 13px;
 			}
 			svg {
-				height: 35px;
-				width: 35px;
+				height: 50px;
+    			width: 90px;
 				transition: .2s linear width, .2s linear height;
 			}
 			span {
@@ -71,10 +71,10 @@ header {
 		}
 
 		.company-name {
-
+			top: 9px;
 			svg {
-				height: 25px;
-				width: 25px;
+				height: 50px;
+    			width: 90px;
 			}
 
 			span {
@@ -226,11 +226,13 @@ header > .container.navbar-scroll {
 	nav {
 		a {
 			transition: .2s linear background-color;
-			&.active {
-				background-color: rgba(0, 0, 0, 0.07);
-			}
-			&:hover, &:active, &:focus {
-				background-color: rgba(0, 0, 0, 0.05);
+			@media #{$mid-point} {
+				&.active {
+					background-color: rgba(0, 0, 0, 0.07);
+				}
+				&:hover, &:active, &:focus {
+					background-color: rgba(0, 0, 0, 0.05);
+				}
 			}
 		}
 	}
