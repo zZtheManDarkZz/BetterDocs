@@ -25,11 +25,19 @@ $(function(){
 	});
 });
 if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
+	window.netlifyIdentity.on("init", user => {
+		if (!user) {
+			window.netlifyIdentity.on("login", () => {
+				document.location.href = "/admin/";
+			});
+		}
+	});
+}
+if (netlifyIdentity.currentUser() == null ) {
+	var generateHere = document.getElementById("nav-actions");
+	generateHere.innerHTML = '<a onclick="netlifyIdentity.open();"><span>Sign Up</span></a><a onclick="netlifyIdentity.open();"><span>Log In</span></a>';
+}
+else {
+	var generateHere = document.getElementById("nav-actions");
+	generateHere.innerHTML = '<a onclick="netlifyIdentity.open();"><span>Logged In</span></a>';
+}
