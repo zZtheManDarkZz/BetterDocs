@@ -39,8 +39,8 @@ collections:
         default: "https://rawcdn.githack.com/USER/REPO/master/"
       - label: "Images"
         name: "images"
-        widget: "list"
-        field:
+        widget: "object"
+        fields:
           - label: "Image"
             name: "image"
             widget: "image"
@@ -93,8 +93,8 @@ collections:
         widget: "string"
       - label: "Images"
         name: "images"
-        widget: "list"
-        field:
+        widget: "object"
+        fields:
           - label: "Image"
             name: "image"
             widget: "image"
