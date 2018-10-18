@@ -41,9 +41,7 @@ collections:
         name: "images"
         widget: "object"
         fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
+          - { label: "Image", name: "image", widget: "image" }
           - label: "Image Title"
             name: "name"
             widget: "string"
@@ -95,9 +93,7 @@ collections:
         name: "images"
         widget: "object"
         fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
+          - { label: "Image", name: "image", widget: "image" }
           - label: "Image Title"
             name: "name"
             widget: "string"
