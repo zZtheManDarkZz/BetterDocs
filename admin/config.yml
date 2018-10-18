@@ -11,6 +11,7 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     delete: false
     fields: # The fields for each document, usually in front matter
+      - label: "Layout"
         name: "layout"
         widget: "hidden"
         default: "product"
