@@ -1,8 +1,5 @@
 backend:
   name: git-gateway
-  accept_roles: #optional - accepts all users if left out
-    - Admin
-    - Editor
   branch: gh-pages # Branch to update (optional; defaults to master)
 publish_mode: editorial_workflow
 media_folder: "images/user_uploads" # Media files will be stored in the repo under images/uploads
