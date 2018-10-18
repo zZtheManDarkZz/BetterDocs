@@ -38,12 +38,10 @@ collections:
         default: "https://rawcdn.githack.com/USER/REPO/master/"
       - label: "Images"
         name: "images"
-      - label: "Image"
-        name: "image"
-        widget: "image"
-      - label: "Name"
-        name: "name"
-        widget: "string"
+        widget: "list"
+        field:
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Title", name: "name", widget: "string" }
       - label: "Tags (Seperated by comma ',')" 
         name: "tags"
         widget: "string"
@@ -89,12 +87,10 @@ collections:
         widget: "string"
       - label: "Images"
         name: "images"
-      - label: "Image"
-        name: "image"
-        widget: "image"
-      - label: "Name"
-        name: "name"
-        widget: "string"
+        widget: "list"
+        field:
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Title", name: "name", widget: "string" }
       - label: "Tags (Seperated by comma ',')" 
         name: "tags"
         widget: "string"
@@ -105,8 +101,3 @@ collections:
       - label: "Publish Date"
         name: "date" 
         widget: "datetime"
-      - label: "Card Authors"
-        name: "authors"
-        widget: "list"
-        field:
-          - { label: "Name", name: "name", widget: "string" }
