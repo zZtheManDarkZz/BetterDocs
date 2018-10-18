@@ -12,9 +12,14 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description_markdown", widget: "markdown"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Github", name: "github", widget: "string"}
+      - {label: "Download URL", name: "download", widget: "string"}
+      - {label: "Support URL", name: "download", widget: "string"}
+      - {label: "Demo URL", name: "download", widget: "string", default: "https://rawcdn.githack.com/USER/REPO/master/"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Name", name: "name", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags (Seperated by comma ',')", name: "style", widget: "string"}
+      - {label: "Style (dark/light)", name: "style", widget: "string", default: "dark"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
