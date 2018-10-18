@@ -1,13 +1,14 @@
-document.addEventListener("DOMContentLoaded", function(signedIn) { 
-	function signedIn() {
+document.addEventListener("DOMContentLoaded", function(netlifyCheck) { 
+	setInterval(function() {
+	function netlifyCheck() {
 		if (netlifyIdentity.currentUser() == null ) {
 			var generateHere = document.getElementById("nav-actions");
 			generateHere.innerHTML = '<a onclick="netlifyIdentity.open();"><span>Sign Up</span></a><a onclick="netlifyIdentity.open();"><span>Log In</span></a>';
 		}
 		else {
 			var generateHere = document.getElementById("nav-actions");
-			generateHere.innerHTML = '<a onclick="netlifyIdentity.open();"><span>Logged In</span></a>';
+			generateHere.innerHTML = '<a onclick="netlifyIdentity.open();"><span>Logged In</span></a><a onclick="netlifyCheck();"><span>Log Out</span></a>';
 		}
-	}
-	signedIn();
-  });
+	console.log("Checked for User Account") 
+	netlifyCheck();
+}}, 2 * 1000);});
