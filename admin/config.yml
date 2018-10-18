@@ -38,14 +38,14 @@ collections:
         default: "https://rawcdn.githack.com/USER/REPO/master/"
       - label: "Images"
         name: "images"
-        widget: "list"
+        widget: "object"
         field:
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Image Title", name: "name", widget: "string" }
       - label: "Tags (Seperated by comma ',')" 
         name: "tags"
         widget: "string"
-      - label: "Style (dark/light)" 
+      - label: "Style" 
         name: "style"
         widget: "select"
         options: ["dark", "light"]
@@ -88,7 +88,7 @@ collections:
         widget: "string"
       - label: "Images"
         name: "images"
-        widget: "list"
+        widget: "object"
         field:
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Image Title", name: "name", widget: "string" }
