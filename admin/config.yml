@@ -41,8 +41,12 @@ collections:
         name: "images"
         widget: "object"
         field:
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Image Title", name: "name", widget: "string" }
+          - label: "Image"
+            name: "image"
+            widget: "image"
+          - label: "Image Title"
+            name: "name"
+            widget: "string"
       - label: "Tags (Seperated by comma ',')" 
         name: "tags"
         widget: "string"
@@ -91,8 +95,12 @@ collections:
         name: "images"
         widget: "object"
         field:
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Image Title", name: "name", widget: "string" }
+          - label: "Image"
+            name: "image"
+            widget: "image"
+          - label: "Image Title"
+            name: "name"
+            widget: "string"
       - label: "Tags (Seperated by comma ',')" 
         name: "tags"
         widget: "string"
