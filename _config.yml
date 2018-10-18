@@ -8,8 +8,8 @@ baseurl:
 #snipcart_key: ""
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-image: /siteicon.png
+logo: /images/siteicon.png
+image: /images/siteicon.png
 description: A Discord enhancement project. Free quality Themes and Plugins for Discord and easy installation instructions for BetterDiscord and more!
 author:
   name: Christopher

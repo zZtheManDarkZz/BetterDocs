@@ -13,7 +13,7 @@ layout: compress
 	<meta content="{{ image.image }}" property="og:image">
 	{% endif %}
 	{% endfor %}
-	<meta content="/siteicon.png" property="og:image">
+	<meta content="/images/siteicon.png" property="og:image">
 	{% if page.categories %}
 	{% for category in page.categories limit:1 %}
 	<meta content="{{ category }}" property="article:section">
@@ -34,7 +34,7 @@ layout: compress
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
-	<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+	<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
 	{% if site.snipcart_key %}
 	<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet">
 	{% endif %}

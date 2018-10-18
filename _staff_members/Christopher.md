@@ -1,7 +1,7 @@
 ---
 name: Christopher
 position: Owner
-image_path: /MrRobot.png
+image_path: /images/MrRobot.png
 twitter: rixhchris
 blurb:
 ---
