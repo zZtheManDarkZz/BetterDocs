@@ -4,12 +4,13 @@ repo="MrRobotjs/BetterDocs"
 issue-term="title"
 theme="github-light"
 crossorigin="anonymous"
+issue-number='{{ page.ghcommentid }}'
 async></script>
 <div id="gh-comments">
     <h4>COMMENTS</h4>
     <div id="gh-comments-list"></div>
     <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
 </div>
-<script type="text/javascript" issue-number='{{ page.ghcommentid }}'>
+<script type="text/javascript">
     DoGithubComments({{ page.ghcommentid }});
 </script>
