@@ -7,7 +7,7 @@ function netlifyCheck() {
 	}
 	else {
 		var generateHere = document.getElementById("nav-actions");
-		generateHere.innerHTML = '<a href="/admin/"><span>Editor Panel</span></a><a onclick="netlifyIdentity.logout();"><span>Log Out</span></a>';
+		generateHere.innerHTML = '<a href="/admin/" target="blank"><span>Editor Panel</span></a><a onclick="netlifyIdentity.logout();"><span>Log Out</span></a>';
 	}
 }
 console.log("Checking for User Account");
