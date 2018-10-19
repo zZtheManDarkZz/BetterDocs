@@ -92,7 +92,7 @@ parcelRequire = function(e) {
     Object.defineProperty(M, "__esModule", {
         value: !0
     });
-    var l = "https://api.utteranc.es";
+    var l = "https://betterdocs-oauth.herokuapp.com/";
     M.UTTERANCES_API = l;
     var c = {};
     Object.defineProperty(c, "__esModule", {
