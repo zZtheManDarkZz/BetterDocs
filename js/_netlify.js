@@ -3,7 +3,7 @@ setInterval(function() {
 function netlifyCheck() {
 	if (netlifyIdentity.currentUser() == null ) {
 		var generateHere = document.getElementById("nav-actions");
-		generateHere.innerHTML = '<a onclick="netlifyIdentity.open(signup);"><span>Sign Up</span></a><a onclick="netlifyIdentity.open(login);"><span>Log In</span></a>';
+		generateHere.innerHTML = '<a onclick="netlifyIdentity.open(\'signup\');"><span>Sign Up</span></a><a onclick="netlifyIdentity.open(\'login\');"><span>Log In</span></a>';
 	}
 	else {
 		var generateHere = document.getElementById("nav-actions");
