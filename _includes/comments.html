@@ -10,6 +10,6 @@ async></script>
     <div id="gh-comments-list"></div>
     <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
 </div>
-<script type="text/javascript">
+<script type="text/javascript" issue-number='{{ page.ghcommentid }}'>
     DoGithubComments({{ page.ghcommentid }});
 </script>
