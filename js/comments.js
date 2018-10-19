@@ -135,7 +135,7 @@ parcelRequire = function(e) {
     a.description = k ? k.content : "";
     var i = document.querySelector("meta[property='og:title'],meta[name='og:title']");
     a["og:title"] = i ? i.content : "", document.head.insertAdjacentHTML("afterbegin", "<style>\n    .utterances {\n      position: relative;\n      box-sizing: border-box;\n      width: 100%;\n      max-width: 760px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n    .utterances-frame {\n      position: absolute;\n      left: 0;\n      right: 0;\n      width: 1px;\n      min-width: 100%;\n      max-width: 100%;\n      height: 100%;\n      border: 0;\n    }\n  </style>");
-    var h = b.src.match(/^https:\/\/utteranc.es|http:\/\/localhost:\d+/)[0],
+    var h = b.src.match(/^https:\/\/betterdocs.us|http:\/\/localhost:\d+/)[0],
         o = h + "/comments.html";
     b.insertAdjacentHTML("afterend", "<div class=\"utterances\">\n    <iframe class=\"utterances-frame\" title=\"Comments\" scrolling=\"no\" src=\"" + o + "?" + g(a) + "\"></iframe>\n  </div>");
     var p = b.nextElementSibling;
