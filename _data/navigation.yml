@@ -2,27 +2,59 @@
   link: /
   new_window: false
   highlight: false
+  dropdown: #true/nil (empty)
+  dropdown_links:
+  - name:
+    link: 
+    icon: 
 - name: Themes
   link: /themes/
   new_window: false
   highlight: false
   dropdown: #true/nil (empty)
   dropdown_links:
-  - name: bdd
-    link: /bdd/
-  - name: ed
-    link: /ed/
+  - name:
+    link: 
+    icon: 
+  dropdown: #true/nil (empty)
+  dropdown_links:
+  - name:
+    link: 
+    icon: 
 - name: Plugins
   link: /plugins/
   new_window: false
   highlight: false
+  dropdown: #true/nil (empty)
+  dropdown_links:
+  - name:
+    link: 
+    icon: 
 - name: Server
   link: https://discord.gg/D4cAkXX
   new_window: true
   highlight: true
+  dropdown: #true/nil (empty)
+  dropdown_links:
+  - name:
+    link: 
+    icon: 
 - name: Docs
   link: https://support.betterdocs.us
   new_window: false
   highlight: false
-
+  dropdown: #true/nil (empty)
+  dropdown_links:
+  - name:
+    link: 
+    icon: 
+- name: Download
+  link: /download/
+  new_window: false
+  highlight: false
+  dropdown: #true/nil (empty)
+  dropdown_links:
+  - name:
+    link: 
+    icon: 
 # to add a dropdown add "dropdown: true" to any nav link

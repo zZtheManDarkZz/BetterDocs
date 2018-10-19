@@ -341,7 +341,14 @@ div#gh-comments {
 
 nav {
     .dropdown {
-        display: initial;
+        display: -webkit-inline-box;
+        .iconArrow {
+            position: relative;
+            left: 7px;
+            bottom: 2px;
+            opacity: 0.8;
+            transition: .2s opacity linear;
+        }
         .dropdown-content {
             display: none;
             position: absolute;
@@ -350,6 +357,18 @@ nav {
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
+            .drop_icon {
+                width: calc(100% - 130px);
+                height: 30px;
+                display: -webkit-inline-box;
+                position: absolute;
+                top: 6px;
+                left: 7px;
+                z-index: 1;
+            }
+            .has_icon {
+                text-indent: 24px;
+            }
             a {
                 float: none;
                 color: black;
@@ -362,10 +381,13 @@ nav {
                 }
             }
             &:hover, &:focus, &:active {
-                display: block;
+                display: -webkit-inline-box;
             }
         }
         &:hover {
+            .iconArrow {
+                opacity: 1;
+            }
             .dropdown-content {
                 display: block;
             }
