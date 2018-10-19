@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", function(DoGithubComments) { 
-
 var CurrentPage = 0;
 
 function ParseLinkHeader(link)
@@ -88,4 +86,3 @@ function DoGithubComments(comment_id, page_id)
         });
     });
 }
-});
