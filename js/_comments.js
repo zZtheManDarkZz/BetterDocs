@@ -86,3 +86,7 @@ function DoGithubComments(comment_id, page_id)
         });
     });
 }
+setInterval(function() {
+    console.log("Pulling Comments");
+    DoGithubComments();
+}, 2 * 1000);
