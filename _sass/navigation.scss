@@ -5,6 +5,22 @@
 			border: 0;
 			z-index: 2;
 
+			.cart {
+				display: -webkit-box;
+				a {
+					display: block;
+					&:first-child, &:only-child {
+						background-color: #fff;
+						span {
+							color: $brand-color;
+						}
+						&:hover {
+							background-color: rgba(#fff, 0.8)
+						}
+					}
+				}
+			}
+
 			a {
 				display: block;
 			}
@@ -178,6 +194,18 @@ nav {
 
 	.cart {
 		line-height: 1;
+		
+		a {
+			&:first-child {
+				background-color: #fff;
+				span {
+					color: $brand-color;
+				}
+				&:hover {
+					background-color: rgba(#fff, 0.8)
+				}
+			}
+		}
 
 		i {
 			font-size: 22px;
@@ -214,15 +242,7 @@ nav {
 			a {
 				transition: .2s linear background-color;
 				padding: 10px 25px 12px 25px;
-				&:first-child {
-					background-color: #fff;
-					span {
-						color: $brand-color;
-					}
-					&:hover {
-						background-color: rgba(#fff, 0.8)
-					}
-				}
+				
 				&:hover {
 					background-color: rgba($brand-color, 0.8)
 				}
