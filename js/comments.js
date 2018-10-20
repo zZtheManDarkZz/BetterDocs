@@ -43,7 +43,7 @@ function DoGithubComments(comment_id, page_id) {
 
                 // Individual comments
                 $.each(comments, function (i, comment) {
-
+                    if (i > 0) {
                     var date = new Date(comment.created_at);
 
                     var t = "<div id='gh-comment'>";
@@ -62,7 +62,14 @@ function DoGithubComments(comment_id, page_id) {
                     t += "<a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Heart' count='" + comment.reactions.heart + "'>" + comment.reactions.heart + "</div></a>"
                     t += "</div></div>";
                     $("#gh-comments-list").append(t);
-                });
+                }});
+
+                $.each(comments, function (i, comment) {
+                    if (i == 0) {
+                        $("#add").append("<div class='product-rating'><a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Dislike' count='" + comment.reactions["-1"] + "' >" + comment.reactions["-1"] + "</div></a><a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Like' count='" + comment.reactions["+1"] + "' >" + comment.reactions["+1"] + "</div></a></div>");
+                        console.log(i); 
+                    }}
+                );
 
                 // Setup comments button if there are more pages to display
                 var links = ParseLinkHeader(jqXHR.getResponseHeader("Link"));

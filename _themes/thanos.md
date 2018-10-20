@@ -8,7 +8,7 @@ download: https://github.com/gco360/thanos-theme
 demo: https://cdn.rawgit.com/gco360/thanos-theme/master/thanos.theme.css
 support: https://discord.gg/6fXRKyx
 style: dark
-tags:
+tags: test tag
 images:
   - name: Thanos Preview
     image: /images/themes/Thanos_Preview.jpg
