@@ -7,6 +7,9 @@ description_markdown: >-
   for e.g. checking announcement channels before moving elsewhere.
 author: planetarian
 github: 'https://github.com/planetarian/'
+images:
+  - image: /images/user_uploads/c9fef44e-8d8d-478b-9889-3f8a18852815.gif
+    name: Default Channels Preview
 download: >-
   https://github.com/planetarian/BetterDiscordPlugins/blob/master/DefaultChannels.plugin.js
 support: 'https://github.com/planetarian/BetterDiscordPlugins/issues'
