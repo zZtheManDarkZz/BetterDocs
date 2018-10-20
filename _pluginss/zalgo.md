@@ -13,6 +13,7 @@ github: 'https://github.com/planetarian/'
 download: >-
   https://github.com/planetarian/BetterDiscordPlugins/blob/master/Zalgo.plugin.js
 support: 'https://github.com/planetarian/BetterDiscordPlugins/issues'
+ghcommentid: '90'
 date: 2018-10-20T05:32:43.000Z
 ---
 
