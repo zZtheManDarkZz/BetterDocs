@@ -395,7 +395,7 @@ nav {
     }
 }
 .product-rating {
-    display: flex;
+    display: -webkit-box;
     .reaction {
         display: -webkit-inline-box;
         background-color: rgba($brand-color, .17);

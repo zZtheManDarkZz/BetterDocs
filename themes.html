@@ -36,7 +36,7 @@ search: true
 							{% else %}
 							<p>${{ theme.price }}</p>
 							{% endif %}
-							<div class="button-wrapper flex-row">
+							<div class="button-wrapper flex-row" id="add">
 								<div class="button flex-button">
 									<a href="{{ theme.download }}" target="blank">Download</a>
 									<a href="{{ site.url }}/demo/{{ theme.style }}/?theme={{ theme.demo }}" target="blank">Demo</a>
@@ -89,40 +89,6 @@ $(function() {
 		});
 	});
 });
-/*
-$(function() {
-	$.fn.sortList = function() {
-		var mylist = $(this);
-		var listitems = $('li', mylist).get();
-		listitems.sort(function(a, b) {
-			var compA = $(a).text().toUpperCase();
-			var compB = $(b).text().toUpperCase();
-			return (compA < compB) ? -1 : 1;
-		});
-		$.each(listitems, function(i, itm) {
-			mylist.append(itm);
-		});
-	}
-	$("ul#product-list").sortList();
-});
-
-selector to parent element (best approach by id)
-var parent = document.querySelector("ul#product-list"),
-	take items (parent.children) into array
-	itemsArray = Array.prototype.slice.call(parent.children);
-sort items in array by custom criteria
-itemsArray.sort(function(a, b) {
-	inner text suits best (even when formated somehow)
-	if (a.innerText < b.innerText) return -1;
-	if (a.innerText > b.innerText) return 1;
-	return 0;
-});
-reorder items in the DOM
-itemsArray.forEach(function(item) {
-	one by one move to the end in correct order
-	parent.appendChild(item);
-});*/
 var count = $('ul#product-list').children().length;
 $('#result').text(count);
 </script>
-<script>

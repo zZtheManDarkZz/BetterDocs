@@ -22,7 +22,7 @@ function DoGithubComments(comment_id, page_id) {
         page_id = 1;
 
     var api_url = "https://betterdocs-comments.herokuapp.com/repos/" + repo_name;
-    var api_issue_url = "https://api.github.com/repos/MrRobotjs/BetterDocs" + "/issues/" + comment_id;
+    var api_issue_url = api_url + "/issues/" + comment_id;
     var api_comments_url = api_url + "/issues/" + comment_id + "/comments" + "?page=" + page_id;
 
     var url = "https://github.com/MrRobotjs/BetterDocs/issues/" + comment_id;
@@ -43,7 +43,6 @@ function DoGithubComments(comment_id, page_id) {
 
                 // Individual comments
                 $.each(comments, function (i, comment) {
-                    if (i > 0) {
                     var date = new Date(comment.created_at);
 
                     var t = "<div id='gh-comment'>";
@@ -54,21 +53,20 @@ function DoGithubComments(comment_id, page_id) {
                     t += "<div id='gh-comment-hr'></div>";
                     t += comment.body_html;
                     t += "<div class='comment-reactions-options'>";
-                    t += "<a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Dislike' count='" + comment.reactions["-1"] + "' >" + comment.reactions["-1"] + "</div></a>"
                     t += "<a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Like' count='" + comment.reactions["+1"] + "' >" + comment.reactions["+1"] + "</div></a>"
+                    t += "<a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Dislike' count='" + comment.reactions["-1"] + "' >" + comment.reactions["-1"] + "</div></a>"
                     t += "<a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Laugh' count='" + comment.reactions.laugh + "' >" + comment.reactions.laugh + "</div></a>"
                     t += "<a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Hooray' count='" + comment.reactions.hooray + "' >" + comment.reactions.hooray + "</div></a>"
                     t += "<a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Confused' count='" + comment.reactions.confused + "'>" + comment.reactions.confused + "</div></a>"
                     t += "<a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Heart' count='" + comment.reactions.heart + "'>" + comment.reactions.heart + "</div></a>"
                     t += "</div></div>";
                     $("#gh-comments-list").append(t);
-                }});
+                });
 
                 $.each(comments, function (i, comment) {
-                    if (i == 0) {
-                        $("#add").append("<div class='product-rating'><a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Dislike' count='" + comment.reactions["-1"] + "' >" + comment.reactions["-1"] + "</div></a><a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Like' count='" + comment.reactions["+1"] + "' >" + comment.reactions["+1"] + "</div></a></div>");
+                        $("#add2").append("<div class='product-rating'><a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Dislike' count='" + comment.reactions["-1"] + "' >" + comment.reactions["-1"] + "</div></a><a href='" + comment.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Like' count='" + comment.reactions["+1"] + "' >" + comment.reactions["+1"] + "</div></a></div>");
                         console.log(i); 
-                    }}
+                    }
                 );
 
                 // Setup comments button if there are more pages to display
@@ -85,5 +83,25 @@ function DoGithubComments(comment_id, page_id) {
                 $("#gh-comments-list").append("Comments are not open for this post yet.");
             }
         });
+
+        $.ajax(api_issue_url, {
+            headers: { Accept: "application/vnd.github.v3.html+json" },
+            dataType: "json",
+            success: function (issues, textStatus, jqXHR) {
+
+                // Add post button to first page
+                if (page_id == 1)
+
+                $.each(issues, function (i, issue) {
+                    if (i == 0) {
+                        $("#add").append("<div class='product-rating'><a href='" + issue.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Like' count='" + issue.reactions["+1"] + "' >" + issue.reactions["+1"] + "</div></a><a href='" + issue.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Dislike' count='" + issue.reactions["-1"] + "' >" + issue.reactions["-1"] + "</div></a></div>");
+                        console.log(i); 
+                    }}
+                );
+
+            },
+        });
+
+
     });
 }
