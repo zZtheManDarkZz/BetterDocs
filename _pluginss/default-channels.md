@@ -13,6 +13,7 @@ images:
 download: >-
   https://github.com/planetarian/BetterDiscordPlugins/blob/master/DefaultChannels.plugin.js
 support: 'https://github.com/planetarian/BetterDiscordPlugins/issues'
+ghcommentid: '88'
 date: 2018-10-20T05:22:46.270Z
 ---
 
