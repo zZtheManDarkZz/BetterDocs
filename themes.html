@@ -30,7 +30,7 @@ search: true
 							<h4><a href="{{ theme.url }}">{{ theme.title }}</a></h4>
 							<h5>by <b>{{ theme.author }}</b></h5>
 							<div class="product-description">
-								{{ theme.description_markdown | truncate: 100 | markdownify }}
+								{{ theme.description_markdown | truncate: 100 }}
 							</div>
 							{% if theme.price == nil %}
 							{% else %}
