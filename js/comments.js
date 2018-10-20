@@ -94,7 +94,7 @@ function DoGithubComments(comment_id, page_id) {
 
                 $.each(issues, function (i, issue) {
                     if (i == 0) {
-                        $("#add").append("<div class='product-rating'><a href='" + issue.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Like' count='" + issue.reactions["+1"] + "' >" + issue.reactions["+1"] + "</div></a><a href='" + issue.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Dislike' count='" + issue.reactions["-1"] + "' >" + issue.reactions["-1"] + "</div></a></div>");
+                        $("#add").append("<div class='product-rating'><a href='" + issue.html_url + "#issue-" + issue.id + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Like' count='" + issue.reactions["+1"] + "' >" + issue.reactions["+1"] + "</div></a><a href='" + issue.html_url + "' target='blank'><div class='reaction' name='input[content]' type='submit' value='Dislike' count='" + issue.reactions["-1"] + "' >" + issue.reactions["-1"] + "</div></a></div>");
                         console.log(i); 
                     }}
                 );
