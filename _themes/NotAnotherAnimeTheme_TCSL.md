@@ -1,17 +1,18 @@
 ---
-title: NotAnotherAnimeTheme - TCSL
-author: puckzxz
-github: https://github.com/puckzxz
-description_markdown: >-
-  The triple column variant of the easily customizable Discord theme!
-download: https://github.com/puckzxz/NotAnotherAnimeTheme
-demo: https://8xs4qxklp8.execute-api.us-east-2.amazonaws.com/release/gorawgit?giturl=/puckzxz/NotAnotherAnimeTheme/master/NotAnotherAnimeThemeTCSL.theme.css
-support: https://discord.gg/FdZhbjY
-style: dark
-tags:
-images:
-    - name: NotAnotherAnimeTheme - TCSL Preview
-      image: https://i.imgur.com/J4CHHcV.jpg
 layout: product
-ghcommentid: #0
+title: NotAnotherAnimeTheme - TCSL
+description_markdown: The triple column variant of the easily customizable Discord theme!
+author: puckzxz
+github: 'https://github.com/puckzxz'
+images:
+  - image: 'https://i.imgur.com/J4CHHcV.jpg'
+    name: NotAnotherAnimeTheme - TCSL Preview
+download: 'https://github.com/puckzxz/NotAnotherAnimeTheme'
+support: 'https://discord.gg/FdZhbjY'
+demo: >-
+  https://8xs4qxklp8.execute-api.us-east-2.amazonaws.com/release/gorawgit?giturl=/puckzxz/NotAnotherAnimeTheme/master/NotAnotherAnimeThemeTCSL.theme.css
+style: dark
+ghcommentid: '84'
+date: 2018-10-20T17:48:38.756Z
 ---
+
