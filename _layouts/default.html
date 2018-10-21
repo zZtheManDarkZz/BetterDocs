@@ -13,7 +13,7 @@ layout: compress
 	<meta content="{{ image.image }}" property="og:image">
 	{% endif %}
 	{% endfor %}
-	<meta content="/images/siteicon.png" property="og:image">
+	<meta content="{{ site.baseurl }}/images/siteicon.png" property="og:image">
 	{% if page.categories %}
 	{% for category in page.categories limit:1 %}
 	<meta content="{{ category }}" property="article:section">
