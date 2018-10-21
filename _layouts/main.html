@@ -98,50 +98,7 @@ layout: compress
 	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1998206533560539" data-ad-slot="1731267039"
 	 data-ad-format="auto" data-full-width-responsive="true">
 	</ins>
-	<footer>
-		<div class="container">
-			<ul class="footer-columns">
-				<li class="about">
-					<div class="company-name">{% include svg_logo.html %} <span>{{ site.title }}</span></div>
-					<p class="editable">A Discord enhancement project. Free quality Themes and Plugins for Discord and easy
-						installation instructions for BetterDiscord and more!</p>
-				</li>
-
-				<li class="footer-nav">
-					<h4>General</h4>
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="/themes/">Themes</a></li>
-						<li><a href="/pluginss/">Plugins</a></li>
-					</ul>
-				</li>
-
-				<li class="footer-nav">
-					<h4>Help</h4>
-					<ul>
-						<li><a href="https://support.betterdocs.us">Support</a></li>
-						<li><a href="/contact/">Contact</a></li>
-						<li><a href="/about/">About</a></li>
-					</ul>
-				</li>
-
-				<li>
-					<h4>Contact Us</h4>
-					<p>Need help with something? <a href="/contact/">Get in touch</a>.
-						<p class="email"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
-						<p><a href="tel:{{ site.author.phone }}">{{ site.author.phone }}</a></p>
-
-						<div class="social-icons">
-							<a class="facebook" href="/">{% include social-icon.html icon="Facebook2" %}</a>
-							<a class="twitter" href="/">{% include social-icon.html icon="Twitter" %}</a>
-							<a class="google-plus" href="/">{% include social-icon.html icon="Google Plus" %}</a>
-							<a class="linkedin" href="/">{% include social-icon.html icon="LinkedIn" %}</a>
-						</div>
-				</li>
-			</ul>
-			<!-- COPYRIGHT All Rights Reserved &copy; {{ site.time | date: '%Y' }} {{ site.title }}, Inc. Template by <a href="https://cloudcannon.com">CloudCannon</a></p> -->
-		</div>
-	</footer>
+	{% include footer.html %}
 	{% include lightbox.html %}
 	{% include lazyload.html %}
 	<script type="text/javascript" charset="utf-8">

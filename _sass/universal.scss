@@ -1,20 +1,24 @@
 .img-comp-container {
     position: relative;
-    height: 200px; /*should be the same height as the images*/
+    height: 200px;
+    /*should be the same height as the images*/
 }
+
 .img-comp-img {
     position: absolute;
     width: auto;
     height: auto;
-    overflow:hidden;
+    overflow: hidden;
 }
+
 .img-comp-img img {
-    display:block;
-    vertical-align:middle;
+    display: block;
+    vertical-align: middle;
 }
+
 .img-comp-slider {
     position: absolute;
-    z-index:9;
+    z-index: 9;
     cursor: ew-resize;
     /*set the appearance of the slider:*/
     width: 40px;
@@ -23,63 +27,74 @@
     opacity: 0.7;
     border-radius: 50%;
 }
+
 .margin-left-unset {
     margin-left: unset;
 }
+
 .hero.flex-row {
     justify-content: space-between;
     display: block;
     padding: 100px 30px 100px 16px;
+
     h2 {
         font-size: 2.5em;
         text-align: left;
     }
+
     p {
         text-align: left;
     }
 }
+
 .hero-text {
     flex-basis: 21%;
     padding: unset;
 }
+
 .card-container.flex-row {
     display: block
 }
+
 .card-container {
     justify-content: space-evenly;
+
     .card {
         flex-basis: 25%;
         background-color: #fff;
         border-radius: 2px;
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
         display: flex;
         transition: .1s linear box-shadow;
         margin: 15px 30px;
+
         @media #{$mid-point} {
             margin-right: unset;
             margin-left: 33px;
         }
-        &:hover {
-            box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08)
-        }
+
         &:first-child {
             @media #{$mid-point} {
                 margin-left: 80px;
             }
         }
+
         &:last-child {
             @media #{$mid-point} {
                 margin-right: 80px;
             }
         }
+
         .card-inner {
             display: flex;
             flex-direction: column;
+
             .card-header {
                 color: $brand-color;
                 text-align: center;
                 padding: 30px 0px 20px 0px;
                 border-top: 2px solid $brand-color;
+
                 .material-icons {
                     font-size: 2.5em;
                     border: 2px solid;
@@ -87,9 +102,11 @@
                     padding: 16px;
                 }
             }
+
             .card-content {
                 padding: 10px 30px;
                 text-align: center;
+
                 h3 {
                     font-size: 1.5rem;
                     text-align: left;
@@ -97,39 +114,69 @@
                     font-weight: 500;
                     font-family: Roboto;
                     color: #565656;
+
+                    &::after {
+                        content: "";
+                        width: calc(100% - 250px);
+                        height: 2px;
+                        background-color: #339b78;
+                        top: -4px;
+                        display: -webkit-box;
+                        transition: .2s linear width;
+                    }
                 }
+
                 p {
                     font-size: 16px;
                 }
             }
+
             .card-footer {
                 display: block;
                 padding: 15px;
                 position: relative;
                 margin-top: auto;
+
                 .card-btn {
                     color: rgba(0, 0, 0, 0.54);
                     padding: 8px 16px;
                     border-radius: 2px;
                     transition: .2s linear background-color;
                     font-weight: bold;
+
                     &:hover {
                         background-color: rgba(0, 0, 0, 0.08);
                         text-decoration: unset;
                     }
                 }
+
                 &::before {
                     content: "";
                     width: calc(100% - 30px);
                     height: 1px;
-                    background-color: rgba(0, 0, 0, 0.05);
+                    background-color: rgba(0, 0, 0, 0.08);
                     position: absolute;
                     top: -4px;
                 }
             }
         }
+
+        &:hover {
+            box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+
+            .card-content {
+                h3 {
+                    &::after {
+                        content: "";
+                        width: calc(100% - 200px);
+                    }
+                }
+
+            }
+        }
     }
 }
+
 .upload-button-container {
     width: 40px;
     height: 40px;
@@ -143,13 +190,16 @@
     transition: .2s linear width, .2s linear background-color;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.6);
     z-index: 1;
+
     &:hover {
         background-color: darken($brand-color, 10%);
         width: 146px;
     }
+
     &:focus {
         background-color: darken($brand-color, 20%);
     }
+
     .upload-btn {
         width: 100%;
         height: 40px;
@@ -157,12 +207,14 @@
         font-size: 15px;
         line-height: 37px;
     }
-     span {
+
+    span {
         font-size: 23px;
         position: relative;
         top: 2px;
     }
 }
+
 input#search-input {
     width: calc(100% - 150px);
     border-radius: 25px;
@@ -176,17 +228,21 @@ input#search-input {
     opacity: 0.45;
     transition: .2s linear opacity;
     color: #fff;
+
     &:hover {
         opacity: 0.6;
     }
+
     &:focus {
         opacity: 1;
     }
 }
+
 input#search-input::placeholder {
     color: #fff;
     text-indent: 10px;
 }
+
 div#gh-comments {
     margin: auto 40px;
     background-color: #fff;
@@ -204,7 +260,7 @@ div#gh-comments {
     div#gh-comments-list {
         display: flex;
         flex-direction: column;
-        
+
         .button.small {
             display: -webkit-inline-box;
             top: unset;
@@ -218,7 +274,7 @@ div#gh-comments {
                 padding: 11px 20px;
             }
         }
-        
+
         div#gh-comment {
             background-color: #eee;
             box-shadow: 0px 0px 0px 0px #000;
@@ -230,7 +286,7 @@ div#gh-comments {
                 text-indent: 39px;
                 margin: 5px 0px 15px 0px;
             }
-        
+
             img {
                 border: 2px solid #b1b1b1;
                 border-radius: 2px;
@@ -248,14 +304,15 @@ div#gh-comments {
                 font-size: 12px;
                 text-transform: lowercase;
             }
-        
-            .user { 
+
+            .user {
                 display: unset;
 
-                    a {
+                a {
                     font-size: 18px;
                 }
             }
+
             .date {
                 display: unset;
                 margin-left: 5px;
@@ -265,6 +322,7 @@ div#gh-comments {
                     color: #9e9e9e;
                 }
             }
+
             .comment-reactions-options {
                 display: flex;
 
@@ -342,6 +400,7 @@ div#gh-comments {
 nav {
     .dropdown {
         display: -webkit-inline-box;
+
         .iconArrow {
             position: relative;
             left: 7px;
@@ -349,14 +408,16 @@ nav {
             opacity: 0.8;
             transition: .2s opacity linear;
         }
+
         .dropdown-content {
             display: none;
             position: absolute;
             background-color: #fff;
             border-radius: 2px;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
+
             .drop_icon {
                 width: calc(100% - 130px);
                 height: 30px;
@@ -366,9 +427,11 @@ nav {
                 left: 7px;
                 z-index: 1;
             }
+
             .has_icon {
                 text-indent: 24px;
             }
+
             a {
                 float: none;
                 color: black;
@@ -376,26 +439,34 @@ nav {
                 text-decoration: none;
                 display: block;
                 text-align: left;
+
                 &:hover {
                     background-color: #ddd;
                 }
             }
-            &:hover, &:focus, &:active {
+
+            &:hover,
+            &:focus,
+            &:active {
                 display: -webkit-inline-box;
             }
         }
+
         &:hover {
             .iconArrow {
                 opacity: 1;
             }
+
             .dropdown-content {
                 display: block;
             }
         }
     }
 }
+
 .product-rating {
     display: -webkit-box;
+
     .reaction {
         display: -webkit-inline-box;
         background-color: rgba($brand-color, .17);
@@ -414,6 +485,7 @@ nav {
             border-color: $brand-color;
         }
     }
+
     div[value="Dislike"]::before,
     div[value="Like"]::before {
         content: "";
@@ -441,67 +513,99 @@ nav {
 
 [class^="tooltip"] {
     position: relative;
+
     &:after {
-      opacity: 0;
-      visibility: hidden;
-      position: absolute;
-      content: attr(data-tooltip);
-      padding: 6px 10px;
-      top: 2em;
-      left: 50%;
-      transform: translateX(-50%) translateY(-2px);
-      background: grey;
-      color: white;
-      white-space: nowrap;
-      z-index: 2;
-      border-radius: 2px;
-      transition: opacity 0.2s $cubic, transform 0.2s $cubic;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        content: attr(data-tooltip);
+        padding: 6px 10px;
+        top: 2em;
+        left: 50%;
+        transform: translateX(-50%) translateY(-2px);
+        background: grey;
+        color: white;
+        white-space: nowrap;
+        z-index: 2;
+        border-radius: 2px;
+        transition: opacity 0.2s $cubic, transform 0.2s $cubic;
     }
+
     &:hover {
-      &:after {
-        display: block;
-        opacity: 1;
-        visibility: visible;
-        transform: translateX(-50%) translateY(0);
-      }
+        &:after {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
     }
 }
 
 .tooltip--triangle {
     &:before {
-      content: '';
-      width: 0;
-      height: 0;
-      border-left: solid 5px transparent;
-      border-right: solid 5px transparent;
-      border-bottom: solid 5px grey;
-      opacity: 0;
-      visibility: hidden;
-      position: absolute;
-      transform: translateX(-50%) translateY(-2px);
-      top: 1.7em;
-      left: 50%;
-      transition: opacity 0.2s $cubic, transform 0.2s $cubic;
-      z-index: 3;
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: solid 5px transparent;
+        border-right: solid 5px transparent;
+        border-bottom: solid 5px grey;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        transform: translateX(-50%) translateY(-2px);
+        top: 1.7em;
+        left: 50%;
+        transition: opacity 0.2s $cubic, transform 0.2s $cubic;
+        z-index: 3;
     }
+
     &:hover {
-      &:before {
-        display: block;
-        opacity: 1;
-        visibility: visible;
-        transform: translateX(-50%) translateY(0);
-      }
+        &:before {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
     }
 }
 
 @keyframes context-open-new {
-0% {
-    transform: scale(1, 0.8); } 
+    0% {
+        transform: scale(1, 0.8);
+    }
 }
+
 @keyframes opacity {
-from {
-    opacity: 0; } 
+    from {
+        opacity: 0;
+    }
 }
+.footerBackground {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    .footerBlob {
+        -webkit-animation-play-state: running;
+        animation-play-state: running;
+        -webkit-animation: footer-blob-animation 100s linear infinite alternate;
+        animation: footer-blob-animation 100s linear infinite alternate;
+    }
+}
+@keyframes footer-blob-animation {
+    0% {
+        d: path("M140.881198,194.260295 C257.600568,129.32862 342.939626,119.84993 418.009939,203.154617 C493.080251,286.459305 545.728689,70.9046172 636.439626,63.9593047 C727.150564,57.0139922 768.99822,139.670242 858.802907,119.431961 C948.607595,99.1936797 1071.91228,-32.9977266 1243.91228,7.75227342 C1415.91228,48.5022734 1404.10369,208.584305 1508.27166,178.709305 C1612.43963,148.834305 1633.73291,79.913472 1711.63588,98.8569055 C1776.28676,114.577866 1819.96778,221.391836 1889.37253,185.808108 C2017.32661,120.206212 2004.01952,336.769569 2004.01952,336.769569 L271.635881,337 L-149.063338,337 C-149.063338,337 -245.850307,175.637635 -58.0633382,228.867188 C33.8652851,254.92501 64.1722713,236.933925 140.881198,194.260295 Z")
+    }
+
+    50% {
+        d: path("M-60.13579,199.189799 C-33.8674767,-71.7287911 170.194454,11.9640675 274.985105,83.0972992 C379.775756,154.230531 409.072181,161.653171 521.54913,124.460269 C634.026079,87.2673683 645.348165,219.42808 735.152853,199.189799 C824.95754,178.951518 948.262228,46.7601116 1120.26223,87.5101116 C1292.26223,128.260112 1309.89513,321.347957 1414.0631,291.472957 C1518.23106,261.597957 1580.53259,89.5639434 1732.07052,88.5665294 C1892.57296,87.5101116 1897.70372,225.708266 2049.59054,199.189799 C2201.47736,172.671332 2002.94707,336.794682 2002.94707,336.794682 L270.563429,337.025114 L-60.13579,337.025114 C-60.13579,337.025114 -469.886827,134.917309 -282.099858,188.146862 C-190.171235,214.204685 -65.9645849,259.30515 -60.13579,199.189799 Z")
+    }
+
+    to {
+        d: path("M-160.553381,263.533987 C-124.4955,243.377988 -18.6139605,181.080724 56.456352,264.385412 C131.526664,347.690099 165.148428,226.409513 223.668826,168.5 C282.189224,110.590487 372.68516,208.331261 462.489847,188.09298 C552.294535,167.854699 723.262827,-40.1656225 847.424394,40.7522734 C971.58596,121.670169 1156.59375,252.295176 1300.40314,228.958726 C1444.21253,205.622277 1478.90991,106.221579 1563.51957,124.699258 C1655.80276,144.85274 1595.69955,250.007434 1832.41793,206.740235 C2069.1363,163.473036 2002.94707,336.794682 2002.94707,336.794682 L270.563429,337.025114 L-60.13579,337.025114 C-60.13579,337.025114 -495.794798,256.512987 -308.007829,309.74254 C-216.079206,335.800362 -208.740043,290.469854 -160.553381,263.533987 Z")
+    }
+}
+
 ::-webkit-scrollbar-button {
     display: none !important;
     border-radius: 10px !important;
@@ -528,10 +632,12 @@ from {
 ::-webkit-scrollbar {
     width: 9px !important;
 }
+
 .flex-column {
     display: flex;
     flex-direction: column;
 }
+
 .flex-row {
     display: flex;
     flex-direction: row;
