@@ -48,9 +48,11 @@
   - name: BandagedBD
     link: https://github.com/rauenzi/BetterDiscordApp/releases
     icon:
+    new_window: true
   - name: EnhancedDiscord
     link: https://enhanceddiscord.com/
     icon:
+    new_window: true
 - name: Getting Started
   link: https://support.betterdocs.us
   new_window: false
