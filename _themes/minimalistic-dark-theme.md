@@ -1,11 +1,12 @@
 ---
 layout: product
-title: Minimalistic Dark Theme
+title: Minimalistic Dark
 description_markdown: This is a theme for people who like dark easy to the eye versions of Discord
 author: Ruben7173
 github: 'https://github.com/Ruben7173/'
 images:
-  - image: /images/user_uploads/minimalistic-dark_theme_preview.png
+  - image: /images/user_uploads/minimalistic-dark_preview.png
+    name: Minimalistic Dark Preview
 download: >-
   https://github.com/Ruben7173/Ruben7173.github.io/blob/master/BetterDiscord-Themes/minimalistic-dark-theme/code.css
 support: 'https://github.com/Ruben7173/Ruben7173.github.io/issues'
