@@ -11,6 +11,9 @@ search: true
 	<section style="padding: 40px 0;">
 		<div class="container">
 			<h2>Themes ({{ site.themes | size }})</h2>
+			<div class="section-btn"> 
+				<a href="https://github.com/MrRobotjs/BetterDocs/tree/gh-pages/_themes#uploading-a-theme" target="blank" class="btn section">Add Theme</a> 
+			</div>
 			<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
 			<ul class="product-list" id="product-list">
 				<!-- Third Ad Responsive -->
@@ -68,12 +71,10 @@ search: true
 		</div>
 	</section>
 </div>
-<a href="https://github.com/MrRobotjs/BetterDocs/tree/gh-pages/_themes#uploading-a-theme">
-<div class="upload-button-container">
-	<div class="upload-btn">
-		<span>+</span> Upload Theme
+<a class="help-btn" href="https://support.{{ base.url }}"> 
+	<div class="white">
+		?
 	</div>
-</div>
 </a>
 <script>
 $(function() {
