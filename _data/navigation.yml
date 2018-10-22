@@ -39,17 +39,20 @@
   - name:
     link: 
     icon: 
-- name: Docs
-  link: https://support.betterdocs.us
+- name: Download
+  link: #
   new_window: false
   highlight: false
-  dropdown: #true/nil (empty)
+  dropdown: true #true/nil (empty)
   dropdown_links:
-  - name:
-    link: 
-    icon: 
-- name: Download
-  link: /download/
+  - name: BandagedBD
+    link: https://github.com/rauenzi/BetterDiscordApp/releases
+    icon:
+  - name: EnhancedDiscord
+    link: https://enhanceddiscord.com/
+    icon:
+- name: Getting Started
+  link: https://support.betterdocs.us
   new_window: false
   highlight: false
   dropdown: #true/nil (empty)
