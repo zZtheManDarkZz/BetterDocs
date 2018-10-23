@@ -8,7 +8,24 @@ search: true
 ---
 
 <div class="content" id="themes">
-	<section style="padding: 40px 0;">
+	<div class="filter-container">
+		{% for filter in site.data.filters.themes %}
+		{% assign class = "" %}
+		{% if filter.highlight %}
+			{% assign class = class | append: " highlight" %}
+		{% endif %}
+		{% if filter.disabled %}
+			{% assign class = class | append: " disabled" %}
+		{% endif %}
+		{% if filter.link == page.url %}
+			{% assign class = class | append: " active" %}
+		{% endif %}
+		<a {% if filter.disabled %}{% else %}href="{% include relative-src.html src=filter.link %}"{% endif %} class="{{ filter.name }}{{ class }}">
+			<div class="filters">{{ filter.name }}</div>
+		</a>
+		{% endfor %}
+    </div>
+	<section style="padding: 0px 0px 20px 0px;">
 		<div class="container">
 			<h2>Themes ({{ site.themes | size }})</h2>
 			<div class="button section-btn"> 

@@ -71,7 +71,7 @@ collections:
         widget: "datetime"
   - name: "plugins" # Used in routes, e.g., /admin/collections/blog
     label: "Plugins" # Used in the UI
-    folder: "_pluginss/" # The path to the folder where the documents are stored
+    folder: "_plugins/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     media_folder: "images/plugins"

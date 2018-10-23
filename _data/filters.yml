@@ -1,0 +1,52 @@
+themes:
+  - name: All
+    link: /themes/
+    new_window: false
+    highlight: false
+  - name: BandagedBD
+    link: /themes/BandagedBD/
+    new_window: false
+    highlight: false
+  - name: EnhancedDiscord
+    link: /themes/EnhancedDiscord/
+    new_window: false
+    highlight: false
+  - name: BeautifulDiscord
+    link: /themes/BeautifulDiscord/
+    new_window: false
+    highlight: false
+  - name: DiscordInjections
+    link: /themes/DiscordInjections/
+    new_window: false
+    highlight: false
+  - name: BetterDiscord
+    link: /themes/BetterDiscord/
+    new_window: false
+    highlight: false
+    disabled: true
+plugins:
+  - name: All
+    link: /plugins/
+    new_window: false
+    highlight: false
+  - name: BandagedBD
+    link: /plugins/BandagedBD/
+    new_window: false
+    highlight: false
+  - name: EnhancedDiscord
+    link: /plugins/EnhancedDiscord/
+    new_window: false
+    highlight: false
+  - name: BeautifulDiscord
+    link: /plugins/BeautifulDiscord/
+    new_window: false
+    highlight: false
+  - name: DiscordInjections
+    link: /plugins/DiscordInjections/
+    new_window: false
+    highlight: false
+  - name: BetterDiscord
+    link: /plugins/BetterDiscord/
+    new_window: false
+    highlight: false
+    disabled: true

@@ -1,15 +1,15 @@
 ---
-title: Discord themes & plugins!
-description: Free quality Themes and Plugins for Discord and easy installation instructions for BetterDiscord and more!
-hero: Discord Plugins
-subtitle: Custom JS plugins made by our commuity!
+title: EnhancedDiscord themes & plugins!
+description: A list of free and paid high quality themes made by our community. For the past 3 years we have been the #1 go to website for all Discord themes!
+hero: EnhancedDiscord Themes
+subtitle: Custom CSS themes made by our commuity!
 layout: default
-type: plugin
 search: true
 ---
-<div class="content" id="plugins">
+
+<div class="content" id="themes">
 	<div class="filter-container">
-		{% for filter in site.data.filters.plugins %}
+		{% for filter in site.data.filters.themes %}
 		{% assign class = "" %}
 		{% if filter.highlight %}
 			{% assign class = class | append: " highlight" %}
@@ -27,9 +27,9 @@ search: true
     </div>
 	<section style="padding: 0px 0px 20px 0px;">
 		<div class="container">
-			<h2>Plugins ({{ site.plugins | size }})</h2>
+			<h2>Themes ({{ site.themes | size }})</h2>
 			<div class="button section-btn"> 
-				<a href="https://github.com/MrRobotjs/BetterDocs/tree/gh-pages/_plugins#uploading-a-plugin" target="blank" class="btn section">Add Plugin</a> 
+				<a href="https://github.com/MrRobotjs/BetterDocs/tree/gh-pages/_themes#uploading-a-theme" target="blank" class="btn section">Add Theme</a> 
 			</div>
 			<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
 			<ul class="product-list" id="product-list">
@@ -41,40 +41,38 @@ search: true
 					data-ad-format="auto"
 					data-full-width-responsive="true">
 				</ins></div></li>
-				{% assign sortedplugins = site.plugins | sort: 'title' %}
-				{% for plugins in sortedplugins %}
+				{% assign sortedThemes = site.themes | sort: 'title' %}
+				{% for theme in sortedThemes %}
 					<li>
 						<div class="styles">
-						<!-- {% include product-styles.html product=plugins %} -->
+						{% include product-styles.html product=theme %}
 						<div class="product-details">
-							<h4><a href="{{ plugins.url }}">{{ plugins.title }}</a></h4>
-							<h5>by <b>{{ plugins.author }}</b></h5>
+							<h4><a href="{{ theme.url }}">{{ theme.title }}</a></h4>
+							<h5>by <b>{{ theme.author }}</b></h5>
 							<div class="product-description">
-								{{ plugins.description_markdown | truncate: 150 }}
+								{{ theme.description_markdown | truncate: 100 }}
 							</div>
-							{% if plugins.price == nil %}
+							{% if theme.price == nil %}
 							{% else %}
-							<p>${{ plugins.price }}</p>
+							<p>${{ theme.price }}</p>
 							{% endif %}
-							<div class="button-wrapper flex-row" id="add2">
+							<div class="button-wrapper flex-row" id="add">
 								<div class="button flex-button">
-									<a href="{{ plugins.download }}" target="blank">Download</a>
-									<a href="{{ plugins.support }}" target="blank">Support</a>
+									<a href="{{ theme.download }}" target="blank">Download</a>
+									<a href="{{ site.url }}/demo/{{ theme.style }}/?theme={{ theme.demo }}" target="blank">Demo</a>
+										
 								</div>
 							</div>
 						</div>
 						</div>
 					</li>
-					<script type="text/javascript">
-						DoGithubComments({{ plugins.ghcommentid }});
-					</script>
 				{% endfor %}
 				<!-- Rectangle Ad 336x280 -->
 				<li><div class="styles">
-						<ins class="adsbygoogle"
-							 style="display:inline-block;width:336px;height:280px"
-							 data-ad-client="ca-pub-1998206533560539"
-							 data-ad-slot="8585740998"></ins></div></li>
+					<ins class="adsbygoogle"
+						 style="display:inline-block;width:336px;height:280px"
+						 data-ad-client="ca-pub-1998206533560539"
+						 data-ad-slot="8585740998"></ins></div></li>
 				<!-- Third Ad Responsive -->
 				<li><div class="styles"><ins class="adsbygoogle"
 					style="display:block"
@@ -90,25 +88,25 @@ search: true
 		</div>
 	</section>
 </div>
-<a alt-text="Plugin Installation Help" class="help-btn" href="https://documentation.betterdocs.us"> 
+<a alt-text="Theme Installation Help" class="help-btn" href="https://documentation.betterdocs.us"> 
 	<div class="white">
 		?
 	</div>
 </a>
 <script>
-	$(function() {
-		$("#search-input").keyup(function() {
-			console.log("searching for: " + $(this).val());
-			var search = $(this).val().toLowerCase();
-			$("#product-list").find("li").each(function() {
-				if ($(this).text().toLowerCase().includes(search)) {
-					$(this).show();
-				} else {
-					$(this).hide();
-				}
-			});
+$(function() {
+	$("#search-input").keyup(function() {
+		console.log("searching for: " + $(this).val());
+		var search = $(this).val().toLowerCase();
+		$("#product-list").find("li").each(function() {
+			if ($(this).text().toLowerCase().includes(search)) {
+				$(this).show();
+			} else {
+				$(this).hide();
+			}
 		});
 	});
-	var count = $('ul#product-list').children().length;
-	$('#result').text(count);
+});
+var count = $('ul#product-list').children().length;
+$('#result').text(count);
 </script>

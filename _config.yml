@@ -32,7 +32,7 @@ collections:
   themes:
     _hide_content: true
     output: true
-  pluginss:
+  plugins:
     _hide_content: true
     output: true
 

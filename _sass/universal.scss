@@ -556,6 +556,127 @@ nav {
     }
 }
 
+.filter-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+    margin-left: 36px;
+    a {
+        text-decoration: unset;
+        &.active {
+            &.EnhancedDiscord {
+                .filters {
+                    color: $enhanceddiscord;
+                    border: 1px solid rgba($enhanceddiscord, 0.15);
+                    outline: unset;
+                    background-color: rgba($enhanceddiscord, 0.1);
+                        &:hover {
+                        color: $enhanceddiscord;
+                        border: 1px solid rgba($enhanceddiscord, 0.15);
+                        outline: unset;
+                        background-color: rgba($enhanceddiscord, 0.1);
+                    }
+                }
+            }
+            &.BandagedBD {
+                .filters {
+                    color: $bandagedbd;
+                    border: 1px solid rgba($bandagedbd, 0.15);
+                    outline: unset;
+                    background-color: rgba($bandagedbd, 0.1);
+                        &:hover {
+                        color: $bandagedbd;
+                        border: 1px solid rgba($bandagedbd, 0.15);
+                        outline: unset;
+                        background-color: rgba($bandagedbd, 0.1);
+                    }
+                }
+            }
+            &.BeautifulDiscord {
+                .filters {
+                    color: $beautifuldiscord;
+                    border: 1px solid rgba($beautifuldiscord, 0.15);
+                    outline: unset;
+                    background-color: rgba($beautifuldiscord, 0.1);
+                        &:hover {
+                        color: $beautifuldiscord;
+                        border: 1px solid rgba($beautifuldiscord, 0.15);
+                        outline: unset;
+                        background-color: rgba($beautifuldiscord, 0.1);
+                    }
+                }
+            }
+            .filters {
+                color: $brand-color;
+                border: 1px solid rgba($brand-color, 0.15);
+                outline: unset;
+                background-color: rgba($brand-color, 0.1);
+                &:hover {
+                    color: $brand-color;
+                    border: 1px solid rgba($brand-color, 0.15);
+                    outline: unset;
+                    background-color: rgba($brand-color, 0.1);
+                }
+            }
+        }
+        .filters {
+            border: 1px solid #DFE1E5;
+            padding: 5px 10px;
+            border-radius: 25px;
+            margin: 0 3px;
+            background-color: #fff;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 1px 0 0px rgba(0,0,0,0.08);
+            color: #6f6f6f;
+            font-size: 13px;
+            padding: 7px 12px;
+            transition: .2s linear color, .2s linear background-color, .2s linear box-shadow, .2s linear border;
+            &:focus, &:active {
+                box-shadow: 0 1px 2px 0 rgba($brand-color,0.45), 0 2px 6px 2px rgba($brand-color,0.30);
+                color: $brand-color;
+                border: 1px solid #E8F0FE;
+                outline: unset;
+            }
+            
+            &:hover {
+                background-color: #FAFAFB;
+                text-decoration: unset;
+            }
+        }
+        &.EnhancedDiscord {
+            .filters {
+                &:focus, &:active {
+                    box-shadow: 0 1px 2px 0 rgba($enhanceddiscord,0.45), 0 2px 6px 2px rgba($enhanceddiscord,0.30);
+                    color: $enhanceddiscord;
+                }
+            }
+        }
+        &.BandagedBD {
+            .filters {
+                &:focus, &:active {
+                    box-shadow: 0 1px 2px 0 rgba($bandagedbd,0.45), 0 2px 6px 2px rgba($bandagedbd,0.30);
+                    color: $bandagedbd;
+                }
+            }
+        }
+        &.BeautifulDiscord {
+            .filters {
+                &:focus, &:active {
+                    box-shadow: 0 1px 2px 0 rgba($beautifuldiscord,0.45), 0 2px 6px 2px rgba($beautifuldiscord,0.30);
+                    color: $beautifuldiscord;
+                }
+            }
+        }
+        &.disabled {
+            .filters {
+            background-color: #FAFAFB;
+            cursor: not-allowed;
+            color: #b1b1b1;
+            box-shadow: unset;
+            }
+        }
+    }
+}
+
 .tooltip--triangle {
     &:before {
         content: '';
