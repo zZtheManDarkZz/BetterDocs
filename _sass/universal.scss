@@ -409,6 +409,9 @@ nav {
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
             padding: 3px 0;
+            max-height: 0;
+            transition: max-height .2s linear;
+            overflow: hidden;
 
             .drop_icon {
                 width: calc(100% - 130px);
@@ -455,6 +458,7 @@ nav {
 
             .dropdown-content {
                 display: block;
+                max-height: 500px;
             }
         }
     }
