@@ -100,3 +100,17 @@ div#gh-comments {
         }
     }
 }
+
+.filter-container {
+    @media #{$mid-point} {
+        display: flex;
+    }
+    a {
+        .filters {
+            @media #{$mid-point} {
+                display: unset;
+                margin-top: unset;
+            }
+        }
+    }
+}
