@@ -2,8 +2,8 @@
 # Site
 
 title: BetterDocs Documentation & Tutorials
-url: "https://support.betterdocs.us"
-baseurl: "https://support.betterdocs.us"
+url: "https://documentation.betterdocs.us"
+baseurl: "https://documentation.betterdocs.us"
 google_analytics_key:
 disqus_shortname:
 newsletter_action:
