@@ -54,7 +54,7 @@
     icon:
     new_window: true
 - name: Getting Started
-  link: https://support.betterdocs.us
+  link: https://documentation.betterdocs.us
   new_window: false
   highlight: false
   dropdown: #true/nil (empty)
