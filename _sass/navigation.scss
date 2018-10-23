@@ -4,6 +4,7 @@
 		nav {
 			border: 0;
 			z-index: 2;
+			background-color: $brand-color;
 
 			.cart {
 				display: -webkit-box;
@@ -25,6 +26,9 @@
 				display: block;
 			}
 		}
+	}
+	.nav {
+		margin-left: -10px;
 	}
 }
 
