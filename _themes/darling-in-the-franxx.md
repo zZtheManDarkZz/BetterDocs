@@ -6,6 +6,7 @@ author: Ruben7173
 github: 'https://github.com/Ruben7173/'
 images:
   - name: Darling in the Franxx Preview
+  - image: /images/themes/Darling_in_the_Franxx.jpg
 download: >-
   https://github.com/Ruben7173/Ruben7173.github.io/blob/master/BetterDiscord-Themes/Darling-in-The-Franxx/code.css
 support: 'https://github.com/Ruben7173/Ruben7173.github.io/issues'
