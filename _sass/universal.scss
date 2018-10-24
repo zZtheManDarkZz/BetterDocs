@@ -391,19 +391,29 @@ div#gh-comments {
 }
 
 nav {
+  
+  
     .dropdown {
         display: -webkit-inline-box;
+        
+        
         > a {
             transition: .2s linear border-bottom;
             border-bottom: 2px solid transparent;
+            
+            
                 &:hover, &:active, &:focus {
                 border-bottom: 2px solid transparent;
                 }
+                
+                
                 &:hover {
                     border-bottom: 2px solid transparent;
                 }
             }
-        }
+        
+
+
 
         > a::before {
             content: "";
@@ -423,6 +433,8 @@ nav {
             z-index: 3;
         }
 
+
+
         .iconArrow {
             position: relative;
             left: 7px;
@@ -430,6 +442,7 @@ nav {
             opacity: 0.8;
             transition: .2s opacity linear;
         }
+
 
         .dropdown-content {
             display: none;
@@ -445,6 +458,7 @@ nav {
             width: 100%;
             left: 0;
 
+
             .drop_icon {
                 width: calc(100% - 130px);
                 height: 30px;
@@ -455,9 +469,12 @@ nav {
                 z-index: 1;
             }
 
+
             .has_icon {
                 text-indent: 24px;
             }
+
+
 
             a {
                 float: none;
@@ -470,11 +487,13 @@ nav {
                 border-radius: 2px;
                 font-size: 12px;
 
+
                 &:hover {
                     color: #4f545c;
                     background-color: #ececec;
                 }
             }
+
 
             &:hover,
             &:focus,
@@ -483,19 +502,30 @@ nav {
             }
         }
 
+
+
         .nav-link.open::before {
             display: block;
             opacity: 1;
             visibility: visible;
             transform: translateX(-50%) translateY(0);
         }
+        
+        
         .nav-link.open {
             ~ .dropdown-content {
                 display: flex;
                 max-height: 500px;
             }
         }
+
+
+
         &:hover {
+            .dropdown-content {
+                display: flex;
+                max-height: 500px;
+            }
             > a {
             //  display: block;
                 &:hover {
@@ -508,17 +538,20 @@ nav {
                     transform: translateX(-50%) translateY(0);
                 }
             }
+        }
+            
+            
+            
             .iconArrow {
                 opacity: 1;
             }
-
-            .dropdown-content {
-                display: flex;
-                max-height: 500px;
-            }
         }
+        
+        
+        
     }
-}
+
+
 .section-btn {
     display: flex;
     flex-direction: row-reverse;

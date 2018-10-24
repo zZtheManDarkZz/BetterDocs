@@ -86,7 +86,7 @@ layout: compress
 		<section class="hero">
 			<div class="text-container">
 				{% if page.hero %}
-				<h2>{% if page.count %}{{ site.themes | size }}{% endif %} {{ page.hero }}</h2>
+				<h2>{% if page.themes %}{{ site.themes | size }}{% endif %}{% if page.plugins %}{{ site.plugins | size }}{% endif %} {{ page.hero }}</h2>
 				{% elsif page.name %}
 				<h2>{{ page.name }}</h2>
 				{% elsif page.title %}
