@@ -413,16 +413,16 @@
 
 			.tooltip--triangle {
 				&::after {
-					top: 1.35em;
+					top: 1.5em;
 				}
 				&::before {
-					top: 1.5em;
+					top: 1.35em;
 					left: 86%;
 				}
 			}
 
 			.card-date {
-				margin-top: -unset;
+				margin-top: unset;
 			}
 
 			.product-details {
