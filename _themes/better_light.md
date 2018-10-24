@@ -8,7 +8,7 @@ download: https://github.com/satoru8/BetterLightTheme/blob/master/BetterLightThe
 demo: https://raw.githubusercontent.com/satoru8/BetterLightTheme/master/BetterLightTheme.theme.css
 support: http://discord.gg/fjvwb95
 style: light
-tags:
+tags: DiscordInjections
 images:
   - name: Better Light
     image: /images/themes/Better_Light_Preview.png

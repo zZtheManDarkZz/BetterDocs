@@ -1,0 +1,17 @@
+<div class="filter-container">
+    {% for filter in site.data.filters.themes %}
+    {% assign class = "" %}
+    {% if filter.highlight %}
+        {% assign class = class | append: " highlight" %}
+    {% endif %}
+    {% if filter.disabled %}
+        {% assign class = class | append: " disabled" %}
+    {% endif %}
+    {% if filter.link == page.url %}
+        {% assign class = class | append: " active" %}
+    {% endif %}
+    <a {% if filter.disabled %}{% else %}href="{% include relative-src.html src=filter.link %}"{% endif %} class="{{ filter.name }}{{ class }}">
+        <div class="filters">{% if filter.icon %}<div class="filter-i"><img class="filter-icon" src="{{ filter.icon }}"></div>{% endif %}{{ filter.name }}</div>
+    </a>
+    {% endfor %}
+</div>
