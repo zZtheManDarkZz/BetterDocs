@@ -9,7 +9,7 @@
 }
 
 header {
-	padding: 16px 0 10px 0;
+	padding: 0px 0 10px 0;
 	background: linear-gradient(135deg, $header-color 0%, $header-color2 100%);
 	color: #fff;
 
@@ -25,9 +25,13 @@ header {
 	.top-bar {
 		@media #{$mid-point} {
 			display: flex;
+			padding-top: 8px;
 		}
 
 		.logo {
+			top: 7px;
+			position: relative;
+			left: 10px;
 			a {
 				display: block;
 				line-height: 0;
@@ -35,7 +39,8 @@ header {
 
 			svg {
 				fill: #fff;
-				height: 46px;
+				height: 47px;
+    			width: 90px;
 				min-width: 100px;
 				display: -webkit-box;
 			}
@@ -49,7 +54,7 @@ header {
 	nav {
 		@media #{$mid-point} {
 			flex: 1;
-			margin: 0 0 0 10px;
+			margin: 0 0 0 50px;
 			display: block;
 
 			form {
@@ -79,20 +84,27 @@ header {
 		}
 
 		a {
-			color: #fff;
+			color: rgba(255, 255, 255, 0.6);
 			text-decoration: none;
 			display: block;
 			padding: 20px 0;
 
 			@media #{$mid-point} {
 				display: inline-block;
-				padding: 7px 0;
-				margin: 0 15px;
-				border-bottom: 2px solid rgba(255, 255, 255, 0)
+				padding: 19px 22px 18px 22px;
+				border-bottom: 0px solid rgba(255, 255, 255, 0);
+				font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+				font-size: 16px;
+				margin: 0 3px;
 			}
 
 			&.active, &.active:hover {
 				border-bottom-color: rgba(255, 255, 255, .3);
+			}
+
+			&.active {
+				color: #fff;
+				font-weight: bold;
 			}
 
 			&:hover {
@@ -139,7 +151,7 @@ header {
 		svg {
 			fill: #eee;
 			position: absolute;
-			top: 31px;
+			top: 22px;
 			right: 12px;
 			display: inline-block;
 			width: 36px;
@@ -154,9 +166,27 @@ header {
 	}
 
 	input[type=search] {
-		margin: 0;
-		color: #555;
 		padding: 15px;
 		font-size: 1.1em;
+		border-radius: 25px;
+		background-color: rgba(255, 255, 255, 0.3);
+		border: unset;
+		height: 45px;
+		margin: 0 auto;
+		margin-top: 0;
+		margin-bottom: -20px;
+		text-indent: 10px;
+		opacity: 0.45;
+		transition: .2s linear opacity;
+		color: #fff;
+		&:hover {
+			opacity: 0.6; 
+		}
+		&:focus {
+			opacity: 1;
+		}
+	}
+	&::placeholder {
+		color: #fff;
 	}
 }

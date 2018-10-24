@@ -3,7 +3,7 @@
 
 title: BetterDocs Documentation & Tutorials
 url: "https://documentation.betterdocs.us"
-baseurl: "https://documentation.betterdocs.us"
+baseurl:
 google_analytics_key:
 disqus_shortname:
 newsletter_action:
