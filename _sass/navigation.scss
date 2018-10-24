@@ -4,19 +4,23 @@
 		nav {
 			border: 0;
 			z-index: 2;
-			background-color: $brand-color;
+			background-color: #262626;
 
 			.cart {
 				display: -webkit-box;
 				a {
 					display: block;
+					border: unset;
+					&:hover {
+						border: unset;
+					}
 					&:first-child, &:only-child {
-						background-color: #fff;
+						background-color: #333;
 						span {
-							color: $brand-color;
+							color: rgba(#fff,0.6);
 						}
 						&:hover {
-							background-color: rgba(#fff, 0.8) !important;
+							background-color: rgba(#333, 0.7) !important;
 						}
 					}
 				}
@@ -39,27 +43,29 @@ header {
 	position: relative;
 
 	> .container {
-		position: fixed;
+		position: relative;
 		width: 100%;
-		top: 0px;
+		top: -21px;
 		z-index: 100;
 		max-width: 100%;
 		padding: 0px 0px 0px 10px;
 		transition: .2s linear background-color, .2s linear box-shadow;
-		background-color: $brand-color;
+		background-color: #262626;
 		height: 68px;
 
 		@media #{$mid-point} {
 			padding: 0px 0px 0px 15px;
 			height: unset;
+			background-color: #262626;
 		}
 
 		nav {
 			margin-top: 8px;
 			
 			a.nav-toggle {
-				top: -16px;
+				top: -9x;
 				transition: .2s linear top;
+				padding: 18px 20px;
 			}
 		}
 
@@ -81,11 +87,13 @@ header {
 	}
 
 	> .container.navbar-scroll {
-		background-color: $brand-color;
+		background-color: #262626;
 		box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.3);
+		position: fixed;
+		top: 0px;
 
 		nav {
-			margin-top: 0px;
+			margin-top: 13px;
 
 			a.nav-toggle {
 				top: -13px;
@@ -95,13 +103,16 @@ header {
 		.company-name {
 			top: 9px;
 			svg {
-				height: 50px;
-    			width: 90px;
+				height: 40px;
+    			width: 75px;
 			}
 
 			span {
 				font-size: 16px;
 			}
+		}
+		~ .hero {
+			padding: 215px 0px 0px 0px;
 		}
 	}
 
@@ -153,10 +164,12 @@ nav {
 	padding: 20px 0 0 0;
 
 	@media #{$mid-point} {
-		display: inline-block;
+		//display: inline-block;
 		vertical-align: top;
 		width: auto;
-		padding: 0 0 0 40px;
+		padding: 0;
+		margin-top: 13px;
+    	margin-left: -18px;
 	}
 
 	a {
@@ -164,14 +177,36 @@ nav {
 		padding: 20px 10px;
 		border-bottom: 1px solid rgba(255,255,255,0);
 		color: rgba(255,255,255,.6);
-		transition: 200ms ease-in color;
+		transition: 200ms linear color, .2s linear border-bottom;
 		display: none;
 
 		@media #{$mid-point} {
 			display: inline-block;
-			padding: 25px 22px 24px 22px;
+		//	padding: 25px 22px 24px 22px;
+			padding: 15px 15px 15px 15px;
+			font-family: -apple-system, BlinkMacSystemFont, "“Segoe UI”", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "“Helvetica Neue”", sans-serif;
+			font-size: 16px;
+			font-weight: 300;
+			border-bottom: 2px solid transparent;
 		}
 
+		@media #{$mid-point} {
+			&.active {
+				border-bottom: 2px solid #fff;
+			}
+			&:hover, &:active, &:focus {
+				border-bottom: 2px solid rgba(255, 255, 255, 0.85);
+			}
+		}
+
+		&.active {
+			color: #fff;
+			font-weight: bold;
+		}
+
+		&:hover {
+			color: rgba(255, 255, 255, 0.85);
+		}
 
 		&.nav-toggle {
 			display: inline;
@@ -193,7 +228,7 @@ nav {
 		}
 	}
 
-	a:hover {
+	a.open {
 		color: #fff;
 	}
 
@@ -202,13 +237,17 @@ nav {
 		line-height: 1;
 		
 		a {
+			border:unset;
+			&:hover {
+				border: unset;
+			}
 			&:first-child {
-				background-color: #fff;
+				background-color: #333;
 				span {
-					color: $brand-color;
+					color: rgba(#fff, 0.6);
 				}
 				&:hover {
-					background-color: rgba(#fff, 0.8)
+					background-color: rgba(#333, 0.7);
 				}
 			}
 		}
@@ -248,31 +287,35 @@ nav {
 			a {
 				transition: .2s linear background-color;
 				padding: 10px 25px 12px 25px;
+				border: 2px solid transparent;
 				
 				&:hover {
-					background-color: rgba($brand-color, 0.8)
+					background-color: rgba($brand-color, 0.8);
+					border-bottom: 2px solid transparent;
 				}
 			}
 		}
 	}
-
-	a.active {
-		color: #fff;
-		font-weight: bold;
-	}
-
 }
 
 header > .container.navbar-scroll {
 	nav {
 		a {
-			transition: .2s linear background-color;
 			@media #{$mid-point} {
 				&.active {
-					background-color: rgba(0, 0, 0, 0.07);
+					border-bottom: 2px solid #fff;
 				}
 				&:hover, &:active, &:focus {
-					background-color: rgba(0, 0, 0, 0.05);
+					border-bottom: 2px solid rgba(255, 255, 255, 0.85);
+				}
+			}
+		}
+		.cart {
+			a {
+				border-bottom: 2px solid transparent;
+				
+				&:hover {
+					border-bottom: 2px solid transparent;
 				}
 			}
 		}

@@ -40,7 +40,7 @@
     link: 
     icon: 
 - name: Download
-  link: #
+  link: "#"
   new_window: false
   highlight: false
   dropdown: true #true/nil (empty)

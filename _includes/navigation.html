@@ -12,15 +12,15 @@
 		{% if link.dropdown == nil %}
 		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
 		{% elsif link.dropdown %}
-		<div class="dropdown">
-		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}<img src="/images/down_arrow.svg" class="iconArrow" alt="Open Nav"></a>
+		<div class="dropdown" id="dropdown">
+		<a href="{% include relative-src.html src=link.link %}" class="{{ class }} nav-link" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}<img src="/images/down_arrow.svg" class="iconArrow" alt="Open Nav"></a>
 		<div class="dropdown-content">
 			{% for drop_links in link.dropdown_links %}
 			{% if drop_links.icon %}
 			<img src="{{ drop_links.icon }}" class="drop_icon">
 			<a href="{{ drop_links.link }}" class="has_icon" {% if link.new_window %}target="_blank"{% endif %}>{{ drop_links.name }}</a>
 			{% else %}
-			<a href="{{ drop_links.link }}" {% if drop_links.new_window %}target="_blank"{% endif %}>{{ drop_links.name }}</a>
+			<a href="{{ drop_links.link }}" class="" {% if drop_links.new_window %}target="_blank"{% endif %}>{{ drop_links.name }}</a>
 			{% endif %}
 			{% endfor %}
 		</div>
@@ -32,3 +32,12 @@
 		
 	</div>
 </nav>
+<script>
+$('.dropdown').on('click', function(event) {
+    $('.nav-link').toggleClass('open');
+	event.stopPropagation();
+});
+$('html').click(function() {
+	$('.nav-link').removeClass('open');
+});
+</script>

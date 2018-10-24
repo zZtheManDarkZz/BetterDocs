@@ -34,16 +34,7 @@
 
 input#search-input {
     @media #{$mid-point} {
-    width: calc(100% - 450px);
-    }
-}
-
-header {
-
-	> .container {
-        @media #{$mid-point} {
-        background-color: transparent;
-        }
+    width: calc(100% - 900px);
     }
 }
 

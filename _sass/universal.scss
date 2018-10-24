@@ -393,6 +393,35 @@ div#gh-comments {
 nav {
     .dropdown {
         display: -webkit-inline-box;
+        > a {
+            transition: .2s linear border-bottom;
+            border-bottom: 2px solid transparent;
+                &:hover, &:active, &:focus {
+                border-bottom: 2px solid transparent;
+                }
+                &:hover {
+                    border-bottom: 2px solid transparent;
+                }
+            }
+        }
+
+        > a::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: solid 8px transparent;
+            border-right: solid 8px transparent;
+            border-bottom: solid 8px #f5f5f5;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            transform: translateX(-50%) translateY(-2px);
+            top: 2.7em;
+            left: 3.2em;
+            transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+            display: none;
+            z-index: 3;
+        }
 
         .iconArrow {
             position: relative;
@@ -405,14 +434,16 @@ nav {
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #fff;
+            background-color: #f5f5f5;
             border-radius: 2px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
-            padding: 3px 0;
+            padding: 8px 0px;
             max-height: 0;
             transition: max-height .2s linear;
             overflow: hidden;
+            width: 100%;
+            left: 0;
 
             .drop_icon {
                 width: calc(100% - 130px);
@@ -430,7 +461,7 @@ nav {
 
             a {
                 float: none;
-                color: #a8a8a8;
+                color: #666;
                 padding: 5px 10px;
                 text-decoration: none;
                 display: block;
@@ -441,7 +472,7 @@ nav {
 
                 &:hover {
                     color: #4f545c;
-                    background-color: #f2f2f2;
+                    background-color: #ececec;
                 }
             }
 
@@ -452,13 +483,37 @@ nav {
             }
         }
 
+        .nav-link.open::before {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+        .nav-link.open {
+            ~ .dropdown-content {
+                display: flex;
+                max-height: 500px;
+            }
+        }
         &:hover {
+            > a {
+            //  display: block;
+                &:hover {
+                    border-bottom: 2px solid transparent;
+                }
+                &:hover::before {
+                    display: block;
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateX(-50%) translateY(0);
+                }
+            }
             .iconArrow {
                 opacity: 1;
             }
 
             .dropdown-content {
-                display: block;
+                display: flex;
                 max-height: 500px;
             }
         }
@@ -737,8 +792,7 @@ nav {
     .footerBlob {
         -webkit-animation-play-state: running;
         animation-play-state: running;
-        -webkit-animation: footer-blob-animation 100s linear infinite alternate;
-        animation: footer-blob-animation 100s linear infinite alternate;
+        animation: footer-blob-animation 75s linear infinite alternate;
     }
 }
 @keyframes footer-blob-animation {
