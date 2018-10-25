@@ -553,11 +553,15 @@ nav {
 
 
 .section-btn {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: -40px;
-    position: relative;
-    top: -44px;
+    top: 11px;
+    right: unset;
+    position: absolute;
+    @media #{$above-tablet} {
+        position: absolute;
+        top: -30px;
+        display: -webkit-inline-box;
+        right: 40px;
+    }
 }
 .product-rating {
     display: -webkit-box;
