@@ -8,7 +8,8 @@ images:
   - image: /images/themes/Darling_in_the_Franxx.jpg
     name: Darling in the Franxx Preview
 download: >-
-  https://github.com/Ruben7173/Ruben7173.github.io/blob/master/BetterDiscord-Themes/Darling-in-The-Franxx/code.css
+  https://github.com/Ruben7173/Ruben7173.github.io/blob/master/BetterDiscord-Themes/Darling-in-The-Franxx/02-theme.theme.css
+auto: true
 support: 'https://github.com/Ruben7173/Ruben7173.github.io/issues'
 demo: >-
   https://rawcdn.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/Darling-in-The-Franxx/code.css
