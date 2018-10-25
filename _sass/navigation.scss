@@ -8,6 +8,8 @@
 
 			.cart {
 				display: -webkit-box;
+				padding-bottom: 10px;
+				padding-left: 5px;
 				a {
 					display: block;
 					border: unset;
@@ -28,6 +30,45 @@
 
 			a {
 				display: block;
+			}
+		}
+		header {
+			> .container {
+				nav {
+					.dropdown {
+						.nav-link {
+							&.open {
+								~ .dropdown-content {
+									display: block;
+									margin-top: 49px;
+									z-index: 2;
+								}
+							}
+						}
+						
+						&:hover {
+
+							.nav-link {
+								&.open {
+									~ .dropdown-content {
+										display: block;
+										margin-top: 49px;
+										z-index: 2;
+									}
+								}
+							}
+
+							.dropdown-content {
+								display: block;
+								margin-top: 49px;
+								z-index: 2;
+							}
+						}
+					}
+					a:not(.nav-toggle) {
+						text-align: left;
+					}
+				}
 			}
 		}
 	}

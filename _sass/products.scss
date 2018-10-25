@@ -258,9 +258,11 @@
             .flex-button {
                 flex-basis: 16%;
 				display: block;
+				margin-top: 15px;
 
 				@media #{$above-tablet} {
 					display: flex;
+					margin-top: unset;
 				}
 				
                 a {
