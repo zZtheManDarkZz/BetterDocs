@@ -260,7 +260,28 @@
 				display: flex;
 				
                 a {
-                    margin: 0px 4px 0px 4px;
+					margin: 0px 4px 0px 4px;
+					&.has-icon {
+						padding-left: 55px;
+						.cloud-download {
+							height: 35px;
+							position: absolute;
+							margin-left: -45px;
+							margin-top: -8px;
+						}
+					}
+					&.secondary-btn {
+						background-color: unset;
+						color: $brand-color;
+						box-shadow: unset;
+						&:hover {
+							background-color: #f1f1f1;
+							color: $brand-color;
+						}
+						&:focus, &:active {
+							background-color: #d4d4d4;
+						}
+					}
 				}
 				
                 .btn {
