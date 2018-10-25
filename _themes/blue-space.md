@@ -8,7 +8,8 @@ images:
   - image: /images/user_uploads/blue_space_preview.jpg
     name: Blue Space Preview
 download: >-
-  https://github.com/Ruben7173/Ruben7173.github.io/blob/master/BetterDiscord-Themes/blue-space/code.css
+  https://github.com/Ruben7173/Ruben7173.github.io/blob/master/BetterDiscord-Themes/blue-space/blue-space.theme.css
+auto: true
 support: 'https://github.com/Ruben7173/Ruben7173.github.io/issues'
 demo: >-
   https://rawcdn.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/blue-space/code.css
