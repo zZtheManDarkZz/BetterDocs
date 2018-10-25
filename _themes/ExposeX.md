@@ -12,7 +12,7 @@ images:
   - image: /images/themes/Expose_X_Preview_-_Custom_Colors.png
     name: ExposeX Preview - Custom Colors
 download: 'https://betterdiscord.net/ghdl?id=1958'
-auto: true
+auto: false
 support: 'https://discord.gg/Pdz7jAH'
 demo: >-
   https://rawgit.com/CorbsEditor/Themes-for-BetterDiscord/master/Expose%20X/ExposeXRaw.theme.css

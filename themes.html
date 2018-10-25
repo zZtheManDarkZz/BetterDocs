@@ -48,7 +48,7 @@ themes: true
 							{% endif %}
 							<div class="button-wrapper flex-row" id="add">
 								<div class="button flex-button">
-									<a href="{{ theme.download }}" target="blank">Download</a>
+									<a href="{% if theme.auto == true %}https://minhaskamal.github.io/DownGit/#/home?url={% endif %}{{ theme.download }}" target="blank">Download</a>
 									<a href="{{ site.url }}/demo/{{ theme.style }}/?theme={{ theme.demo }}" target="blank">Demo</a>
 										
 								</div>

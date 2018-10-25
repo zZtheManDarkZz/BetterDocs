@@ -40,7 +40,7 @@ layout: default
 					<div class="button">{% include snipcart-button.html product=page %}</div> -->
 					<div class="button-wrapper flex-row">
 						<div class="button flex-button">
-							<a href="{{ page.download }}" target="blank">Download</a>
+							<a href="{% if page.auto == true %}https://minhaskamal.github.io/DownGit/#/home?url={% endif %}{{ page.download }}" target="blank">Download</a>
 							{% if page.support == nil %}
 							{% else %}
 							<a href="{{ page.support }}" target="blank">Support</a>

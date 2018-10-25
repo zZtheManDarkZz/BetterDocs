@@ -9,6 +9,7 @@ images:
     name: Neon Waves Preview
 download: >-
   https://github.com/xNightWulf/ThemesForBetterDiscord/blob/master/NeonWaves.theme.css
+auto: true
 support: 'https://discord.gg/5BtB3Tc'
 demo: >-
   https://rawcdn.githack.com/xNightWulf/ThemesForBetterDiscord/master/NeonWaves.theme.css
