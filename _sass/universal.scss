@@ -504,7 +504,7 @@ nav {
 
 
 
-        .nav-link.open::before {
+        .nav-link.open::before, .drop-hover::before {
             display: block;
             opacity: 1;
             visibility: visible;

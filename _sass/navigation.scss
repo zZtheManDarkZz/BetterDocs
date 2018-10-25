@@ -145,6 +145,22 @@ header {
 			left: 40%;
 			bottom: -121px;
 		}
+		&.products {
+			&:before {
+				content: "";
+				background-image: url(/images/header-bg.svg);
+				background-size: 38%;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				border-radius: unset;
+				transform: unset;
+				box-shadow: unset;
+				top: unset;
+				bottom: unset;
+				left: unset;
+			}
+		}
 	}
 
 	a {
