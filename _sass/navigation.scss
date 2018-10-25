@@ -63,7 +63,7 @@ header {
 			margin-top: 8px;
 			
 			a.nav-toggle {
-				top: -9x;
+				top: -9px;
 				transition: .2s linear top;
 				padding: 18px 20px;
 			}
@@ -97,6 +97,13 @@ header {
 
 			a.nav-toggle {
 				top: -13px;
+			}
+			.dropdown {
+				a {
+					&:hover {
+						border-bottom: 2px solid transparent;
+					}
+				}
 			}
 		}
 
@@ -231,6 +238,10 @@ nav {
 
 		&:hover {
 			color: rgba(255, 255, 255, 0.85);
+		}
+
+		&:focus {
+			outline: unset;
 		}
 
 		&.nav-toggle {

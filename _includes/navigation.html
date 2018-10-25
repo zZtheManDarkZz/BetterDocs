@@ -43,4 +43,8 @@ $('html').click(function() {
 $(".dropdown").hover(function () {
     $('.nav-link').toggleClass("drop-hover");
  });
+ $(".nav-link").focus(function(){
+	$('.nav-link').toggleClass('open');
+	event.stopPropagation();
+});
 </script>
