@@ -8,7 +8,8 @@ images:
   - image: /images/user_uploads/minimalistic-dark_preview.png
     name: Minimalistic Dark Preview
 download: >-
-  https://github.com/Ruben7173/Ruben7173.github.io/blob/master/BetterDiscord-Themes/minimalistic-dark-theme/code.css
+  https://github.com/Ruben7173/Ruben7173.github.io/blob/master/BetterDiscord-Themes/minimalistic-dark-theme/minimalist-dark.theme.css
+auto: true
 support: 'https://github.com/Ruben7173/Ruben7173.github.io/issues'
 demo: >-
   https://rawcdn.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/minimalistic-dark-theme/code.css
