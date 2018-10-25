@@ -161,6 +161,15 @@ header {
 				left: unset;
 			}
 		}
+		&.enhanceddiscord {
+			background: linear-gradient(135deg, $brand-color 0%, $enhanceddiscord 100%);
+		}
+		&.beautifuldiscord {
+			background: linear-gradient(135deg, $brand-color 0%, $beautifuldiscord 100%);
+		}
+		&.bandagedbd {
+			background: linear-gradient(135deg, $brand-color 0%, $bandagedbd 100%);
+		}
 	}
 
 	a {

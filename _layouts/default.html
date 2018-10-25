@@ -78,8 +78,17 @@ layout: compress
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NG6W33N" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	{% assign headerbg = "" %}
-		{% if page.themes or pages.plugins %}
+		{% if page.themes or page.plugins %}
 			{% assign headerbg = headerbg | append: " products" %}
+		{% endif %}
+		{% if page.EnhancedDiscord %}
+			{% assign headerbg = headerbg | append: " enhanceddiscord" %}
+		{% endif %}
+		{% if page.BeautifulDiscord %}
+			{% assign headerbg = headerbg | append: " beautifuldiscord" %}
+		{% endif %}
+		{% if page.BandagedBD %}
+			{% assign headerbg = headerbg | append: " bandagedbd" %}
 		{% endif %}
 	<header class="{{ headerbg }}">
 		<div class="container">

@@ -287,6 +287,14 @@
 	}
 }
 
+#themes {
+	.product-list {
+		h4 {
+			max-width: calc(100% - 95px);
+		}
+	}
+}
+
 .product-list {
 	display: flex;
 	flex-flow: wrap;
@@ -308,7 +316,6 @@
 	h4 {
 		margin: 10px 0 0 0;
 		/*padding-right: 100px;*/
-		max-width: calc(100% - 95px);
 	}
 
 	h5 {
