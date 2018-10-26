@@ -99,7 +99,116 @@ layout: compress
 		<section class="hero">
 			<div class="text-container">
 				{% if page.hero %}
-				<h2>{% if page.themes %}{{ site.themes | size }}{% endif %}{% if page.plugins %}{{ site.plugins | size }}{% endif %} {{ page.hero }}</h2>
+
+					{% if page.url == "/themes/" %}
+					<h2>{{ site.themes | size }} {{ page.hero }}</h2>
+					{% endif %}
+
+					{% if page.url contains "/themes/BandagedBD/" %}
+					{% assign counter = 0 %}
+						{% for theme in site.themes %}
+							{% if theme.software contains "BandagedBD" %}
+								{% capture counter %}{{counter | plus:1 }}{% endcapture%}
+							{% endif %}
+						{% endfor %}
+						<h2>{{counter}} {{ page.hero }}</h2>
+					{% endif %}
+
+					{% if page.url contains "/themes/EnhancedDiscord/" %}
+					{% assign counter = 0 %}
+						{% for theme in site.themes %}
+							{% if theme.software contains "EnhancedDiscord" %}
+								{% capture counter %}{{counter | plus:1 }}{% endcapture%}
+							{% endif %}
+						{% endfor %}
+						<h2>{{counter}} {{ page.hero }}</h2>
+					{% endif %}
+
+					{% if page.url contains "/themes/BeautifulDiscord/" %}
+					{% assign counter = 0 %}
+						{% for theme in site.themes %}
+							{% if theme.software contains "BeautifulDiscord" %}
+								{% capture counter %}{{counter | plus:1 }}{% endcapture%}
+							{% endif %}
+						{% endfor %}
+							<h2>{{counter}} {{ page.hero }}</h2>
+					{% endif %}
+
+					{% if page.url contains "/themes/DiscordInjections/" %}
+					{% assign counter = 0 %}
+						{% for theme in site.themes %}
+							{% for software in theme.software %}
+								{% if software.name contains "DiscordInjections" %}
+									{% capture counter %}{{counter | plus:1 }}{% endcapture%}
+								{% endif %}
+							{% endfor %}
+						{% endfor %}
+							<h2>{{counter}} {{ page.hero }}</h2>
+					{% endif %}
+
+					{% if page.url contains "/themes/BetterDiscord/" %}
+					{% assign counter = 0 %}
+						{% for theme in site.themes %}
+							{% if theme.software contains "BetterDiscord" %}
+								{% capture counter %}{{counter | plus:1 }}{% endcapture%}
+							{% endif %}
+						{% endfor %}
+							<h2>{{counter}} {{ page.hero }}</h2>
+					{% endif %}
+
+					{% if page.url == "/plugins/" %}
+						<h2>{{ site.plugins | size }} {{ page.hero }}</h2>
+					{% endif %}
+					{% if page.url contains "/plugins/BandagedBD/" %}
+					{% assign counter = 0 %}
+						{% for plugin in site.plugins %}
+							{% if plugin.software contains "BandagedBD" %}
+								{% capture counter %}{{counter | plus:1 }}{% endcapture%}
+							{% endif %}
+						{% endfor %}
+							<h2>{{counter}} {{ page.hero }}</h2>
+					{% endif %}
+
+					{% if page.url contains "/plugins/EnhancedDiscord/" %}
+					{% assign counter = 0 %}
+						{% for plugin in site.plugins %}
+							{% if plugin.software contains "EnhancedDiscord" %}
+								{% capture counter %}{{counter | plus:1 }}{% endcapture%}
+							{% endif %}
+						{% endfor %}
+							<h2>{{counter}} {{ page.hero }}</h2>
+					{% endif %}
+
+					{% if page.url contains "/plugins/BeautifulDiscord/" %}
+					{% assign counter = 0 %}
+						{% for plugin in site.plugins %}
+							{% if plugin.software contains "BeautifulDiscord" %}
+								{% capture counter %}{{counter | plus:1 }}{% endcapture%}
+							{% endif %}
+						{% endfor %}
+							<h2>{{counter}} {{ page.hero }}</h2>
+					{% endif %}
+
+					{% if page.url contains "/plugins/DiscordInjections/" %}
+					{% assign counter = 0 %}
+						{% for plugin in site.plugins %}
+							{% if plugin.software contains "DiscordInjections" %}
+								{% capture counter %}{{counter | plus:1 }}{% endcapture%}
+							{% endif %}
+						{% endfor %}
+							<h2>{{counter}} {{ page.hero }}</h2>
+					{% endif %}
+
+					{% if page.url contains "/plugins/BetterDiscord/" %}
+					{% assign counter = 0 %}
+						{% for plugin in site.plugins %}
+							{% if plugin.software contains "BetterDiscord" %}
+								{% capture counter %}{{counter | plus:1 }}{% endcapture%}
+							{% endif %}
+						{% endfor %}
+							<h2>{{counter}} {{ page.hero }}</h2>
+					{% endif %}
+				
 				{% elsif page.name %}
 				<h2>{{ page.name }}</h2>
 				{% elsif page.title %}

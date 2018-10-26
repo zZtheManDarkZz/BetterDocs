@@ -26,8 +26,8 @@ plugins: true
 					data-ad-format="auto"
 					data-full-width-responsive="true">
 				</ins></div></li>
-				{% assign sortedplugins = site.plugins | sort: 'title' %}
-				{% for plugins in sortedplugins %}
+				{% for plugins in site.plugins %}
+				{% if plugins.software contains "BetterDiscord" %}
 					<li>
 						<div class="styles">
 						<!-- {% include product-styles.html product=plugins %} -->
@@ -55,9 +55,7 @@ plugins: true
 						</div>
 						</div>
 					</li>
-					<script type="text/javascript">
-						DoGithubComments({{ plugins.ghcommentid }});
-					</script>
+					{% endif %}
 				{% endfor %}
 				<!-- Rectangle Ad 336x280 -->
 				<li><div class="styles">

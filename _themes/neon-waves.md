@@ -13,7 +13,7 @@ auto: true
 support: 'https://discord.gg/5BtB3Tc'
 demo: >-
   https://rawcdn.githack.com/xNightWulf/ThemesForBetterDiscord/master/NeonWaves.theme.css
-tags: '100'
+tags:
 style: dark
 date: 2018-10-22T19:05:09.055Z
 ---

@@ -27,8 +27,8 @@ BeautifulDiscord: true
 					data-ad-format="auto"
 					data-full-width-responsive="true">
 				</ins></div></li>
-				{% assign sortedThemes = site.themes | sort: 'title' %}
-				{% for theme in sortedThemes %}
+				{% for theme in site.themes %}
+				{% if theme.software contains "BeautifulDiscord" %}
 					<li>
 						<div class="styles">
 						{% include product-styles.html product=theme %}
@@ -57,6 +57,7 @@ BeautifulDiscord: true
 						</div>
 						</div>
 					</li>
+					{% endif %}
 				{% endfor %}
 				<!-- Rectangle Ad 336x280 -->
 				<li><div class="styles">
