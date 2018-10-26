@@ -1,6 +1,9 @@
 <section style="padding:unset;">
     <div class="container">
-        <h2><a href="{{ site.url }}/themes/">Themes ({{ site.themes | size }})</a></h2>
+            <div class="featured"><h2>Discover our Featured Themes of the week
+                </h2>
+                <p class="paragraph">Every week we hand-pick some of the best new Discord themes from our collection. These beautiful themes are making our heads turn!</p>
+            </div>
         <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
         <ul class="product-list" id="themes">
             {% for theme in site.themes limit: 3 %}
@@ -8,7 +11,7 @@
                     <div class="styles">
                     {% include product-styles.html product=theme %}
                     <div class="product-details">
-                        <h4><a href="{{ theme.url }}">{{ theme.title }}</a></h4>
+                        <h4><a class="grey-title" href="{{ theme.url }}">{{ theme.title }}</a></h4>
                         <h5>by <b>{{ theme.author }}</b></h5>
                         <div class="product-description">
                             {{ theme.description_markdown | truncate: 105 }}
@@ -22,7 +25,12 @@
                 </li>
             {% endfor %}
         </ul>
-        <h2><a href="{{ site.url }}/plugins/">Plugins ({{ site.plugins | size }})</a></h2>
+        <div class="featured-btn">
+            <div class="button"><a href="/themes/">View More Featured Items</a></div>
+        </div>
+        <div class="featured-second">
+            <h2>Check out our newest plugins</h2>
+        </div>
         <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
             <ul class="product-list" id="plugins">
             {% for plugins in site.plugins limit: 3 %}

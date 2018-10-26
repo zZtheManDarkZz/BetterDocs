@@ -127,6 +127,9 @@
 		h4 {
 			a {
 				color: $brand-color;
+				&.grey-title {
+					color: #4d4d4d;
+				}
 			}
 		}
 	}

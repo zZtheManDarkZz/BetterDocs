@@ -810,6 +810,29 @@ nav {
     }
 }
 
+.featured {
+    text-align: center;
+    h2 {
+        color: #454545;
+        font-weight: bold;
+        font-size: 28px;
+    }
+}
+.featured-btn {
+    text-align: center;
+    margin: 40px 0;
+    .button {
+        display: -webkit-inline-box;
+    }
+}
+.featured-second {
+    margin-top: 20px;
+    h2 {
+        font-weight: 700;
+        font-size: 28px;
+        color: #454545;
+    }
+}
 @keyframes context-open-new {
     0% {
         transform: scale(1, 0.8);
