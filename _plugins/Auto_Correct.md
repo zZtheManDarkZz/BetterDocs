@@ -14,7 +14,7 @@ images:
     name: Auto Correct Preview - Plugin Settings Page
 download: >-
   https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/AutoCorrect.plugin.js
-auto: false
+auto: true
 support: 'https://discord.gg/yNqzuJa'
 software:
   - BandagedBD
