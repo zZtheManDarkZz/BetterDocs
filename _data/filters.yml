@@ -7,6 +7,7 @@ themes:
     link: /themes/BandagedBD/
     new_window: false
     highlight: false
+    tooltip: Basically BetterDiscord Patched
   - name: EnhancedDiscord
     link: /themes/EnhancedDiscord/
     new_window: false
@@ -33,6 +34,7 @@ plugins:
     link: /plugins/BandagedBD/
     new_window: false
     highlight: false
+    tooltip: Basically BetterDiscord Patched
   - name: EnhancedDiscord
     link: /plugins/EnhancedDiscord/
     new_window: false

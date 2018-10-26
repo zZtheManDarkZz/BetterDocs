@@ -10,7 +10,10 @@
     {% if filter.link == page.url %}
         {% assign class = class | append: " active" %}
     {% endif %}
-    <a {% if filter.disabled %}{% else %}href="{% include relative-src.html src=filter.link %}"{% endif %} class="{{ filter.name }}{{ class }}">
+    {% if filter.name == BandagedBD %}
+        {% assign class = class | append: " tooltip--triangle" %}
+    {% endif %}
+    <a {% if filter.disabled %}{% else %}href="{% include relative-src.html src=filter.link %}"{% endif %} class="{% if filter.tooltip %}tooltip--triangle{% endif %} {{ filter.name }}{{ class }}"{% if filter.tooltip %}data-tooltip="{{ filter.tooltip }}"{% endif %}>
         <div class="filters">{% if filter.icon %}<div class="filter-i"><img class="filter-icon" src="{{ filter.icon }}"></div>{% endif %}{{ filter.name }}</div>
     </a>
     {% endfor %}
