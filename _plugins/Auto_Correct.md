@@ -1,17 +1,25 @@
 ---
-title: Auto Correct #* Anything with * is REQUIRED
-author: Metalloriff #*
-github: https://github.com/Metalloriff
+layout: product
+title: Auto Correct
 description_markdown: >-
-  Automatically replaces misspelled words with the first correction, with optional automatic capitalization and punctuation. Requires either Windows 8 or above, Mac, or DevilBro's SpellCheck plugin.
-download: https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/AutoCorrect.plugin.js #* Github isn't required but if it isn't used then further inspection will happen
-support: https://discord.gg/yNqzuJa # A link to allow people to get support or give feedback for the Plugin
-tags:
+  Automatically replaces misspelled words with the first correction, with
+  optional automatic capitalization and punctuation. Requires either Windows 8
+  or above, Mac, or DevilBro's SpellCheck plugin.
+author: Metalloriff
+github: 'https://github.com/Metalloriff'
 images:
-  - name: Auto Correct Preview
-    image: https://i.imgur.com/OvDTo6r.gif # Direct image link should only be used here. Imgur isn't required but if it isn't used then further inspection will happen
-  - name: Auto Correct Preview - Plugin Settings Page
-    image: https://i.imgur.com/9pEw8uj.png # Direct image link should only be used here. Imgur isn't required but if it isn't used then further inspection will happen
-layout: product #* DON'T CHANGE
+  - image: 'https://i.imgur.com/OvDTo6r.gif'
+    name: Auto Correct Preview
+  - image: 'https://i.imgur.com/9pEw8uj.png'
+    name: Auto Correct Preview - Plugin Settings Page
+download: >-
+  https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/AutoCorrect.plugin.js
+auto: false
+support: 'https://discord.gg/yNqzuJa'
+software:
+  - BandagedBD
+  - BetterDiscord
 ghcommentid: 68
+date: 2018-10-26T03:35:45.373Z
 ---
+
