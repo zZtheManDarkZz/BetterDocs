@@ -292,7 +292,7 @@
 						&:focus, &:active {
 							border-color: darken($brand-color, 20%);
 							color: #fff;
-							background-color: darken($brand-color, 10%);
+							background-color: darken($brand-color, 20%);
 						}
 					}
 					&.secondary-btn {
