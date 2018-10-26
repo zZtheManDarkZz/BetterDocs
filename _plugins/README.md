@@ -15,6 +15,11 @@ description_markdown: >- #* Markdown is allowed
 download: https://github.com/ #* Github isn't required but if it isn't used then further inspection will happen
 support: # A link to allow people to get support or give feedback for the Plugin
 tags:
+software: # The list of softwares your plugin supports (remove if you don't support it)
+  - EnhancedDiscord
+  - BandagedBD
+  - BetterDiscord
+  - DiscordInjections
 images:
   - name: {Plugin Name} Preview
     image: https://imgur.com/upload # Direct image link should only be used here. Imgur isn't required but if it isn't used then further inspection will happen
