@@ -52,7 +52,13 @@
   - name: EnhancedDiscord
     link: https://enhanceddiscord.com/
     icon:
+  - name: BeautifulDiscord
+    link: https://github.com/leovoel/BeautifulDiscord
+    icon:
     new_window: true
+  - name: DiscordInjections
+    link: https://github.com/DiscordInjections/DiscordInjections#requirements
+    icon:
 - name: Getting Started
   link: https://documentation.betterdocs.us
   new_window: false
