@@ -41,7 +41,7 @@ layout: default
 					<div class="button-wrapper flex-row">
 						<div class="button flex-button">
 							<a href="{% if page.auto == true %}https://minhaskamal.github.io/DownGit/#/home?url={% endif %}{{ page.download }}" target="blank">Download</a>
-							<a href="{{ page.download }}" target="blank">Source</a>
+							<a href="{{ page.download }}" target="blank" class="third-btn">Source</a>
 							{% if page.support == nil %}
 							{% else %}
 							<a href="{{ page.support }}" target="blank" class="secondary-btn">Support</a>
