@@ -9,10 +9,12 @@ github: 'https://github.com/joe27g/'
 download: >-
   https://github.com/joe27g/EnhancedDiscord/blob/master/plugins/hidden_channels.js
 auto: true
-support: 'https://discord.gg/XAvh9tq'
+support: >-
+  https://github.com/joe27g/EnhancedDiscord/blob/master/plugins/hidden_channels.js
+tags:
+  - '175'
 software:
   - EnhancedDiscord
-ghcommentid: '167'
-date: 2018-10-26T15:40:57.119Z
+date: 2018-10-28T22:21:57.592Z
 ---
 
