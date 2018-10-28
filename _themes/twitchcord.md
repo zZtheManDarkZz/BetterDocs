@@ -1,7 +1,17 @@
 ---
 layout: product
 title: TwitchCord
-description_markdown: "Twitchcord is a theme created with the idea of bringing Twitch to Discord, combined with a little extra personality.\r\n\nEvery aspect and element is carefully crafted and themed with both aesthetics and performance in mind.\r\n\n**PIXEL PERFECT\r**\n\nEach pixel has been meticulously pushed into its proper place. You also may find some animated pixel friends to guide you on your way.\r\n\n**FULLY STYLED\r**\n\nThe animations are really toned down in order to keep performance as high as possible, but the subtleties of the animations present make it worth it.\r\n\n**EVER EVOLVING\r**\n\nAs Discord continues to grow, change, and update, so too shall Twitchcord. Fear not, there is no end in sight for this theme."
+description_markdown: >-
+  Twitchcord is a theme created with the idea of bringing Twitch to Discord, combined with a little extra personality.
+
+  Every aspect and element is carefully crafted and themed with both aesthetics and performance in mind.
+
+  **PIXEL PERFECT**
+  Each pixel has been meticulously pushed into its proper place. You also may find some animated pixel friends to guide you on your way.
+  **FULLY STYLED**
+  The animations are really toned down in order to keep performance as high as possible, but the subtleties of the animations present make it worth it.
+  **EVER EVOLVING**
+  As Discord continues to grow, change, and update, so too shall Twitchcord. Fear not, there is no end in sight for this theme.
 author: BakedPvP
 github: 'https://github.com/twitchcord/'
 images:
