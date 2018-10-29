@@ -15,6 +15,7 @@ demo: >-
   https://raw.githubusercontent.com/satoru8/BetterLightTheme/master/BetterLightTheme.theme.css
 tags:
 style: light
+featured: true
 ghcommentid: 7
 date: 2018-10-25T17:02:58.711Z
 ---

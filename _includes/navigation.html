@@ -18,9 +18,9 @@
 			{% for drop_links in link.dropdown_links %}
 			{% if drop_links.icon %}
 			<img src="{{ drop_links.icon }}" class="drop_icon">
-			<a href="{{ drop_links.link }}" class="has_icon" {% if link.new_window %}target="_blank"{% endif %}>{{ drop_links.name }}</a>
+			<a {% if drop_links.link %}href="{{ drop_links.link }}"{% endif %} class="has_icon" {% if link.new_window %}target="_blank"{% endif %}>{{ drop_links.name }}</a>
 			{% else %}
-			<a href="{{ drop_links.link }}" class="" {% if drop_links.new_window %}target="_blank"{% endif %}>{{ drop_links.name }}</a>
+			<a {% if drop_links.link %}href="{{ drop_links.link }}"{% endif %} class="" {% if drop_links.new_window %}target="_blank"{% endif %}>{{ drop_links.name }}</a>
 			{% endif %}
 			{% endfor %}
 		</div>

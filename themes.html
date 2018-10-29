@@ -27,6 +27,7 @@ themes: true
 				</ins></div></li>
 				{% assign sortedThemes = site.themes | sort: 'title' %}
 				{% for theme in sortedThemes %}
+				{% if theme.featured == true %}
 					<li>
 						<div class="styles">
 						{% include product-styles.html product=theme %}
@@ -55,6 +56,7 @@ themes: true
 						</div>
 						</div>
 					</li>
+					{% endif %}
 				{% endfor %}
 				<!-- Rectangle Ad 336x280 -->
 				<li><div class="styles">
