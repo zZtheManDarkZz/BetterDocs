@@ -27,7 +27,7 @@ themes: true
 				</ins></div></li>
 				{% assign sortedThemes = site.themes | sort: 'title' %}
 				{% for theme in sortedThemes %}
-				{% if theme.featured == true %}
+				{% if theme.featured == false or theme.featured == nil %}
 					<li>
 						<div class="styles">
 						{% include product-styles.html product=theme %}
