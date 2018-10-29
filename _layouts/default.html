@@ -91,9 +91,12 @@ layout: compress
 			{% assign headerbg = headerbg | append: " bandagedbd" %}
 		{% endif %}
 	<header class="{{ headerbg }}">
-		<div class="container">
-			<div class="company-name"><a href="{{ site.baseurl }}/">{% include logo.html %}</a></div>
-			{% include navigation.html %}
+		
+		<div class="nav-container">
+			<div class="container">
+				<div class="company-name"><a href="{{ site.baseurl }}/">{% include logo.html %}</a></div>
+				{% include navigation.html %}
+			</div>
 		</div>
 
 		<section class="hero">

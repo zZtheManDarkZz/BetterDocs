@@ -9,3 +9,14 @@ $(function(){
 		}
 	});
 });
+$(function(){
+	var navbar2 = $('header>.nav-container .container ');
+	
+	$(window).scroll(function(){
+		if($(window).scrollTop() <= 40){
+			navbar2.removeClass('navbar-scroll');
+		} else {
+			navbar2.addClass('navbar-scroll');
+		}
+	});
+});

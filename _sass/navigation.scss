@@ -33,7 +33,7 @@
 			}
 		}
 		header {
-			> .container {
+			> .container, > .nav-container .container  {
 				nav {
 					.dropdown {
 						.nav-link {
@@ -83,7 +83,7 @@ header {
 	background: linear-gradient(135deg, $brand-color 0%, $brand-color-2 100%);
 	position: relative;
 
-	> .container {
+	> .container, > .nav-container .container {
 		position: relative;
 		width: 100%;
 		top: -21px;
@@ -127,7 +127,7 @@ header {
 		}
 	}
 
-	> .container.navbar-scroll {
+	> .container.navbar-scroll, > .nav-container .container.navbar-scroll {
 		background-color: #262626;
 		box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.3);
 		position: fixed;
@@ -158,9 +158,6 @@ header {
 			span {
 				font-size: 16px;
 			}
-		}
-		~ .hero {
-			padding: 215px 0px 0px 0px;
 		}
 	}
 
@@ -375,7 +372,7 @@ nav {
 	}
 }
 
-header > .container.navbar-scroll {
+header > .container.navbar-scroll, header > .nav-container .container.navbar-scroll {
 	nav {
 		a {
 			@media #{$mid-point} {
@@ -397,4 +394,10 @@ header > .container.navbar-scroll {
 			}
 		}
 	}
+}
+
+.nav-container {
+    display: block;
+    height: 130px;
+    width: 100%;
 }
