@@ -810,6 +810,43 @@ nav {
     }
 }
 
+.sorting {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 7px;
+    margin-top: 10px;
+    .sort-grid {
+        background-color: #fff;
+        display: -webkit-inline-box;
+        height: 30px;
+        width: 30px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 0 0px rgba(0, 0, 0, 0.08);
+        cursor: pointer;
+        border-radius: 50%;
+        svg {
+            position: relative;
+            left: 8px;
+            top: 5px;
+        }
+    }
+    .sort-column {
+        background-color: #fff;
+        display: -webkit-inline-box;
+        margin-top: 8px;
+        height: 30px;
+        width: 30px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 0 0px rgba(0, 0, 0, 0.08);
+        cursor: pointer;
+        border-radius: 50%;
+        svg {
+            position: relative;
+            left: 8px;
+            top: 5px;
+        }
+    }
+}
+
 .featured {
     text-align: center;
     h2 {
