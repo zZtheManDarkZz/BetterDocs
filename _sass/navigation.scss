@@ -86,7 +86,7 @@ header {
 	> .container, > .nav-container .container {
 		position: relative;
 		width: 100%;
-		top: -21px;
+		top: 0px;
 		z-index: 100;
 		max-width: 100%;
 		padding: 0px 0px 0px 10px;
@@ -408,6 +408,7 @@ header > .container.navbar-scroll, header > .nav-container .container.navbar-scr
 
 .nav-container {
     display: block;
-    height: 130px;
+    height: 113px;
     width: 100%;
+    margin-top: -20px;
 }
